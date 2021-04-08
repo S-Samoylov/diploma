@@ -1,5 +1,0 @@
-Source: https://github.com/z3prover/z3
-Guide: http://theory.stanford.edu/~nikolaj/programmingz3.html
-OldTutorial: https://rise4fun.com/Z3Py/tutorial/guide
-Book_of_examples: https://sat-smt.codes/SAT_SMT_by_example.pdf
-API: https://z3prover.github.io/api/html/namespacez3py.html
