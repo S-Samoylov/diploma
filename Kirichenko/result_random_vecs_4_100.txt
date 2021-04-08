@@ -1,0 +1,900 @@
+1 
+Input vector
+1100001100111000
+Kirichenko
+7
+x1*~x2*x3*~x4+x1*~x2*~x3+x1*x2*x4+~x1*x3*x4+~x1*~x2+x3*~x4+x1
+Min_Kirichenko
+7
+x1*~x2*x3*~x4+x1*~x2*~x3+x1*x2*x4+~x1*x3*x4+~x1*~x2+x3*~x4+x1
+2 
+Input vector
+1010010001110011
+Kirichenko
+8
+x1*x2*x3*x4+~x1*x2*x3*~x4+~x1*~x2*x3+x1*x2*x4+~x1*x3*x4+~x1*x2+~x3*~x4+x1
+Min_Kirichenko
+7
+x1*x2*~x3*x4+~x1*x2*x3*~x4+~x1*~x2*x3+~x1*x3*x4+~x1*x2+~x3*~x4+x1
+3 
+Input vector
+0101101101011111
+Kirichenko
+7
+~x1*~x2*x3*~x4+~x1*~x2*~x3+x1*x2*x4+x1*x3*x4+x1*x2+~x3*x4+~x1
+Min_Kirichenko
+6
+~x1*~x2*x3*~x4+~x1*~x2*~x3+x1*x2*~x4+x1*x3*x4+~x3*x4+~x1
+4 
+Input vector
+0001011101101110
+Kirichenko
+7
+x1*x2*~x3*~x4+~x1*~x2*~x3+~x1*~x2*x4+x1*x3*x4+~x1*x2+~x3*~x4+x1
+Min_Kirichenko
+7
+x1*x2*~x3*~x4+~x1*~x2*~x3+~x1*~x2*x4+x1*x3*x4+~x1*x2+~x3*~x4+x1
+5 
+Input vector
+0000001000000110
+Kirichenko
+7
+~x1*~x2*x3*~x4+x1*~x2*~x3+x1*x2*x4+x1*x3*x4+x1*x2+x3*~x4+x1
+Min_Kirichenko
+6
+~x1*~x2*x3*~x4+x1*~x2*~x3+x1*x2*~x4+x1*x3*x4+x3*~x4+x1
+6 
+Input vector
+0000001101110100
+Kirichenko
+8
+x1*x2*x3*x4+x1*x2*~x3*~x4+~x1*~x2*x3+x1*~x2*x4+~x1*x3*x4+x1*~x2+x3*~x4+x1
+Min_Kirichenko
+7
+x1*x2*x3*x4+x1*x2*~x3*~x4+~x1*~x2*x3+x1*~x2*~x4+~x1*x3*x4+x3*~x4+x1
+7 
+Input vector
+0101010101011100
+Kirichenko
+8
+x1*x2*x3*x4+x1*~x2*x3*x4+x1*x2*x3+x1*x2*x4+~x1*x3*x4+x1*~x2+~x3*x4+x1
+Min_Kirichenko
+6
+x1*x2*~x3*x4+x1*~x2*x3*x4+x1*x2*x3+~x1*x3*x4+x1*x2+~x3*x4
+8 
+Input vector
+0111010101101010
+Kirichenko
+7
+~x1*x2*~x3*~x4+x1*x2*~x3+~x1*x2*x4+x1*x3*x4+~x1*~x2+~x3*~x4+x1
+Min_Kirichenko
+7
+~x1*x2*~x3*~x4+x1*x2*~x3+~x1*x2*x4+x1*x3*x4+~x1*~x2+~x3*~x4+x1
+9 
+Input vector
+0111101000100111
+Kirichenko
+7
+~x1*~x2*x3*x4+~x1*x2*x3+x1*~x2*x4+~x1*x3*x4+~x1*~x2+~x3*~x4+x1
+Min_Kirichenko
+5
+~x1*x2*x3*~x4+x1*~x2*x4+~x1*~x2+~x3*~x4+x1
+10 
+Input vector
+1110001111111101
+Kirichenko
+8
+x1*x2*x3*x4+~x1*x2*~x3*~x4+x1*x2*~x3+~x1*x2*x4+x1*x3*x4+x1*~x2+x3*x4+~x1
+Min_Kirichenko
+7
+x1*~x2*x3*x4+~x1*x2*~x3*~x4+x1*x2*~x3+~x1*x2*x4+x1*~x2+x3*x4+~x1
+11 
+Input vector
+1011010000100001
+Kirichenko
+8
+x1*x2*x3*x4+x1*~x2*~x3*x4+x1*~x2*x3+x1*x2*x4+x1*x3*x4+~x1*x2+~x3*x4+~x1
+Min_Kirichenko
+5
+x1*~x2*x3*~x4+x1*~x2*~x3*x4+x1*x2*x4+~x1*~x2+~x3*x4
+12 
+Input vector
+1111101010111100
+Kirichenko
+7
+x1*x2*~x3*x4+x1*x2*~x3+~x1*~x2*x4+~x1*x3*x4+x1*~x2+~x3*x4+~x1
+Min_Kirichenko
+6
+x1*x2*~x3*~x4+~x1*~x2*x4+~x1*x3*x4+x1*~x2+~x3*x4+~x1
+13 
+Input vector
+0010011111011111
+Kirichenko
+7
+x1*~x2*x3*x4+x1*x2*~x3+~x1*x2*x4+x1*x3*x4+x1*x2+x3*~x4+x1
+Min_Kirichenko
+5
+x1*x2*x3*x4+x1*x2*x3+~x1*x2*x4+x3*~x4+x1
+14 
+Input vector
+1010000000011000
+Kirichenko
+8
+x1*x2*x3*x4+x1*x2*~x3*x4+x1*x2*~x3+~x1*~x2*x4+~x1*x3*x4+~x1*x2+x3*x4+~x1
+Min_Kirichenko
+5
+x1*x2*x3*x4+x1*x2*~x3*~x4+~x1*~x2*x4+x1*x3*x4+~x1*~x2
+15 
+Input vector
+0000011111001011
+Kirichenko
+8
+x1*x2*x3*x4+~x1*~x2*~x3*~x4+x1*x2*x3+x1*~x2*x4+x1*x3*x4+~x1*~x2+~x3*~x4+~x1
+Min_Kirichenko
+5
+x1*~x2*~x3*x4+~x1*~x2*~x3*~x4+x1*x2*x3+~x1*x2+~x3*~x4
+16 
+Input vector
+1001011100001011
+Kirichenko
+8
+x1*x2*x3*x4+~x1*~x2*x3*~x4+~x1*x2*~x3+x1*~x2*x4+x1*x3*x4+x1*x2+~x3*x4+~x1
+Min_Kirichenko
+6
+x1*~x2*~x3*x4+~x1*~x2*x3*~x4+~x1*x2*~x3+x1*x2+~x3*x4+~x1
+17 
+Input vector
+1111001100011011
+Kirichenko
+8
+x1*x2*x3*x4+x1*x2*x3*x4+~x1*x2*~x3+x1*x2*x4+~x1*x3*x4+x1*x2+x3*x4+~x1
+Min_Kirichenko
+6
+x1*x2*~x3*x4+x1*x2*x3*x4+~x1*x2*~x3+x1*x3*x4+x1*x2+~x1
+18 
+Input vector
+0111101100101101
+Kirichenko
+8
+x1*x2*x3*x4+x1*~x2*~x3*x4+~x1*x2*~x3+x1*x2*x4+x1*x3*x4+x1*~x2+~x3*~x4+~x1
+Min_Kirichenko
+7
+x1*~x2*x3*x4+x1*~x2*~x3*x4+~x1*x2*~x3+x1*x2*x4+x1*~x2+~x3*~x4+~x1
+19 
+Input vector
+0011011110111010
+Kirichenko
+8
+x1*x2*x3*x4+~x1*x2*x3*~x4+~x1*~x2*~x3+~x1*~x2*x4+~x1*x3*x4+~x1*~x2+~x3*x4+x1
+Min_Kirichenko
+7
+x1*x2*x3*x4+~x1*x2*x3*~x4+~x1*~x2*x3+~x1*~x2*x4+~x1*x3*x4+~x3*x4+x1
+20 
+Input vector
+0101111000100001
+Kirichenko
+7
+~x1*x2*x3*x4+x1*~x2*x3+~x1*~x2*x4+~x1*x3*x4+~x1*~x2+x3*x4+~x1
+Min_Kirichenko
+4
+~x1*~x2*~x3*x4+x1*~x2*x3+~x1*x2+x3*x4
+21 
+Input vector
+1000010001000100
+Kirichenko
+8
+x1*x2*x3*x4+x1*~x2*~x3*x4+~x1*~x2*x3+x1*~x2*x4+x1*x3*x4+~x1*x2+~x3*x4+~x1
+Min_Kirichenko
+4
+x1*~x2*~x3*x4+~x1*~x2*x3+~x1*~x2+~x3*x4
+22 
+Input vector
+0110110001100000
+Kirichenko
+8
+x1*x2*x3*x4+x1*~x2*~x3*x4+x1*x2*x3+~x1*~x2*x4+~x1*x3*x4+~x1*~x2+x3*~x4+~x1
+Min_Kirichenko
+6
+x1*x2*x3*~x4+x1*~x2*~x3*x4+~x1*~x2*~x4+~x1*x3*x4+x3*~x4+~x1
+23 
+Input vector
+0001110001011110
+Kirichenko
+8
+x1*x2*x3*x4+~x1*x2*x3*x4+~x1*x2*~x3+x1*~x2*x4+x1*x3*x4+x1*~x2+x3*x4+x1
+Min_Kirichenko
+5
+x1*~x2*~x3*x4+~x1*x2*x3*x4+~x1*x2*~x3+x1*x2+x3*x4
+24 
+Input vector
+0000111100110010
+Kirichenko
+7
+x1*~x2*~x3*~x4+x1*x2*~x3+x1*~x2*x4+~x1*x3*x4+~x1*x2+x3*x4+x1
+Min_Kirichenko
+6
+x1*~x2*~x3*~x4+x1*x2*~x3+x1*~x2*x4+x1*x3*x4+~x1*x2+x1
+25 
+Input vector
+1001011010101011
+Kirichenko
+7
+x1*~x2*~x3*~x4+x1*x2*~x3+x1*~x2*x4+~x1*x3*x4+~x1*x2+~x3*~x4+x1
+Min_Kirichenko
+7
+x1*~x2*~x3*~x4+x1*x2*~x3+x1*~x2*x4+~x1*x3*x4+~x1*x2+~x3*~x4+x1
+26 
+Input vector
+0100000001011001
+Kirichenko
+7
+~x1*x2*x3*x4+x1*x2*x3+~x1*x2*x4+x1*x3*x4+x1*~x2+~x3*x4+x1
+Min_Kirichenko
+5
+~x1*x2*~x3*x4+x1*x2*x3+x1*x3*x4+x1*x2+~x3*x4
+27 
+Input vector
+1101111000110110
+Kirichenko
+8
+x1*x2*x3*x4+x1*x2*x3*x4+~x1*x2*~x3+x1*x2*x4+x1*x3*x4+~x1*x2+x3*~x4+~x1
+Min_Kirichenko
+5
+x1*~x2*x3*x4+x1*x2*~x3*x4+~x1*x2*x3+x3*~x4+~x1
+28 
+Input vector
+1010101110100011
+Kirichenko
+7
+~x1*~x2*x3*x4+x1*x2*x3+x1*x2*x4+x1*x3*x4+x1*~x2+~x3*x4+~x1
+Min_Kirichenko
+7
+~x1*~x2*x3*x4+x1*x2*x3+x1*x2*x4+x1*x3*x4+x1*~x2+~x3*x4+~x1
+29 
+Input vector
+1100011100101110
+Kirichenko
+7
+~x1*x2*x3*x4+x1*x2*~x3+~x1*x2*x4+~x1*x3*x4+~x1*x2+x3*~x4+~x1
+Min_Kirichenko
+5
+~x1*~x2*x3*x4+x1*x2*~x3+~x1*x2*~x4+x3*~x4+~x1
+30 
+Input vector
+1010010011011001
+Kirichenko
+8
+x1*x2*x3*x4+~x1*x2*x3*~x4+~x1*~x2*x3+x1*~x2*x4+~x1*x3*x4+~x1*~x2+~x3*~x4+~x1
+Min_Kirichenko
+7
+x1*x2*x3*x4+~x1*x2*x3*~x4+~x1*~x2*~x3+x1*~x2*x4+~x1*x3*x4+~x3*~x4+~x1
+31 
+Input vector
+0101101001011000
+Kirichenko
+7
+x1*~x2*~x3*x4+x1*x2*~x3+x1*~x2*x4+~x1*x3*x4+~x1*~x2+~x3*x4+~x1
+Min_Kirichenko
+5
+x1*~x2*x3*x4+x1*x2*~x3+~x1*x3*x4+~x1*x2+~x3*x4
+32 
+Input vector
+0010100111000011
+Kirichenko
+7
+~x1*x2*x3*~x4+~x1*x2*~x3+~x1*x2*x4+x1*x3*x4+x1*x2+x3*~x4+x1
+Min_Kirichenko
+6
+~x1*x2*x3*~x4+~x1*x2*~x3+~x1*x2*x4+x1*x3*x4+x1*~x2+x3*~x4
+33 
+Input vector
+0000100000001110
+Kirichenko
+8
+x1*x2*x3*x4+~x1*~x2*x3*x4+~x1*x2*~x3+~x1*x2*x4+x1*x3*x4+x1*~x2+x3*x4+x1
+Min_Kirichenko
+6
+x1*~x2*x3*x4+~x1*~x2*x3*x4+~x1*x2*~x3+~x1*x2*x4+x1*x2+x3*x4
+34 
+Input vector
+1001110110110000
+Kirichenko
+8
+x1*x2*x3*x4+~x1*x2*~x3*~x4+~x1*~x2*~x3+x1*x2*x4+~x1*x3*x4+x1*x2+~x3*x4+x1
+Min_Kirichenko
+6
+x1*x2*~x3*x4+~x1*x2*~x3*~x4+~x1*~x2*~x3+~x1*x3*x4+x1*~x2+~x3*x4
+35 
+Input vector
+1100001011011001
+Kirichenko
+8
+x1*x2*x3*x4+~x1*x2*x3*~x4+~x1*x2*x3+x1*x2*x4+~x1*x3*x4+~x1*~x2+x3*~x4+x1
+Min_Kirichenko
+5
+x1*x2*~x3*x4+~x1*~x2*x3*x4+~x1*~x2+x3*~x4+x1
+36 
+Input vector
+1101011000010110
+Kirichenko
+8
+x1*x2*x3*x4+~x1*~x2*~x3*x4+x1*~x2*x3+x1*~x2*x4+~x1*x3*x4+~x1*x2+~x3*~x4+x1
+Min_Kirichenko
+8
+x1*x2*x3*x4+~x1*~x2*~x3*x4+x1*~x2*x3+x1*~x2*x4+~x1*x3*x4+~x1*x2+~x3*~x4+x1
+37 
+Input vector
+1100011001010011
+Kirichenko
+8
+x1*x2*x3*x4+x1*~x2*~x3*x4+x1*~x2*x3+~x1*x2*x4+~x1*x3*x4+~x1*x2+x3*~x4+~x1
+Min_Kirichenko
+7
+x1*x2*x3*x4+x1*~x2*~x3*x4+x1*~x2*x3+~x1*x2*~x4+~x1*x3*x4+x3*~x4+~x1
+38 
+Input vector
+1010000100100101
+Kirichenko
+8
+x1*x2*x3*x4+~x1*x2*~x3*x4+x1*~x2*x3+x1*~x2*x4+~x1*x3*x4+~x1*x2+~x3*x4+~x1
+Min_Kirichenko
+7
+x1*x2*x3*x4+~x1*x2*~x3*x4+x1*~x2*x3+x1*~x2*x4+~x1*x3*x4+~x1*~x2+~x3*x4
+39 
+Input vector
+0110110011110010
+Kirichenko
+7
+x1*~x2*x3*x4+x1*~x2*~x3+~x1*~x2*x4+~x1*x3*x4+~x1*~x2+x3*~x4+~x1
+Min_Kirichenko
+6
+x1*~x2*x3*x4+x1*~x2*~x3+~x1*~x2*~x4+~x1*x3*x4+x3*~x4+~x1
+40 
+Input vector
+0010100111010001
+Kirichenko
+7
+~x1*~x2*x3*x4+x1*x2*~x3+~x1*x2*x4+~x1*x3*x4+~x1*x2+x3*~x4+x1
+Min_Kirichenko
+5
+~x1*x2*~x3*x4+x1*x2*~x3+~x1*x2+x3*~x4+x1
+41 
+Input vector
+0110101110000010
+Kirichenko
+7
+~x1*x2*x3*x4+~x1*x2*~x3+x1*x2*x4+~x1*x3*x4+x1*x2+~x3*~x4+~x1
+Min_Kirichenko
+5
+~x1*~x2*x3*x4+~x1*x2*~x3+x1*x2*~x4+~x3*~x4+~x1
+42 
+Input vector
+1011111011010100
+Kirichenko
+8
+x1*x2*x3*x4+x1*~x2*~x3*x4+x1*~x2*x3+~x1*x2*x4+x1*x3*x4+x1*~x2+~x3*x4+~x1
+Min_Kirichenko
+6
+x1*~x2*x3*~x4+x1*~x2*~x3*x4+~x1*x2*x4+x1*~x2+~x3*x4+~x1
+43 
+Input vector
+0011010010101010
+Kirichenko
+7
+~x1*~x2*x3*x4+~x1*~x2*~x3+~x1*~x2*x4+x1*x3*x4+~x1*~x2+~x3*x4+x1
+Min_Kirichenko
+5
+~x1*~x2*~x3*~x4+x1*x3*x4+~x1*~x2+~x3*x4+x1
+44 
+Input vector
+1010001110001001
+Kirichenko
+7
+x1*x2*x3*x4+~x1*~x2*x3+~x1*x2*x4+~x1*x3*x4+~x1*~x2+~x3*~x4+~x1
+Min_Kirichenko
+6
+x1*x2*x3*x4+~x1*~x2*~x3+~x1*x2*x4+~x1*x3*x4+~x3*~x4+~x1
+45 
+Input vector
+0101011011001010
+Kirichenko
+8
+x1*x2*x3*x4+x1*~x2*x3*~x4+~x1*x2*~x3+x1*~x2*x4+~x1*x3*x4+~x1*x2+~x3*x4+x1
+Min_Kirichenko
+7
+x1*x2*x3*x4+x1*~x2*x3*~x4+~x1*x2*x3+x1*~x2*x4+~x1*x3*x4+~x3*x4+x1
+46 
+Input vector
+0000011000110110
+Kirichenko
+8
+x1*x2*x3*x4+x1*~x2*~x3*x4+~x1*~x2*~x3+~x1*~x2*x4+~x1*x3*x4+~x1*x2+~x3*~x4+x1
+Min_Kirichenko
+8
+x1*x2*x3*x4+x1*~x2*~x3*x4+~x1*~x2*~x3+~x1*~x2*x4+~x1*x3*x4+~x1*x2+~x3*~x4+x1
+47 
+Input vector
+1010000111100000
+Kirichenko
+8
+x1*x2*x3*x4+~x1*x2*x3*~x4+~x1*x2*~x3+~x1*~x2*x4+~x1*x3*x4+x1*~x2+x3*x4+~x1
+Min_Kirichenko
+7
+x1*x2*x3*x4+~x1*x2*x3*~x4+~x1*x2*~x3+~x1*~x2*x4+x1*x3*x4+x1*~x2+~x1
+48 
+Input vector
+1011000101111000
+Kirichenko
+8
+x1*x2*x3*x4+x1*~x2*x3*~x4+x1*x2*~x3+~x1*x2*x4+x1*x3*x4+~x1*x2+~x3*x4+~x1
+Min_Kirichenko
+6
+x1*~x2*x3*x4+x1*~x2*x3*~x4+x1*x2*~x3+~x1*x2*~x4+~x3*x4+~x1
+49 
+Input vector
+1111100111100000
+Kirichenko
+7
+x1*x2*x3*x4+~x1*x2*x3+~x1*x2*x4+~x1*x3*x4+x1*~x2+x3*x4+~x1
+Min_Kirichenko
+6
+x1*x2*x3*x4+~x1*x2*x3+~x1*x2*x4+x1*x3*x4+x1*~x2+~x1
+50 
+Input vector
+1110011111011100
+Kirichenko
+7
+x1*~x2*x3*x4+~x1*~x2*x3+~x1*x2*x4+x1*x3*x4+~x1*~x2+x3*~x4+x1
+Min_Kirichenko
+5
+x1*x2*x3*x4+~x1*~x2*~x3+~x1*x2*x4+x3*~x4+x1
+51 
+Input vector
+0001011111111010
+Kirichenko
+8
+x1*x2*x3*x4+x1*x2*~x3*x4+~x1*x2*~x3+~x1*x2*x4+x1*x3*x4+~x1*x2+x3*x4+x1
+Min_Kirichenko
+6
+x1*~x2*x3*x4+x1*x2*~x3*x4+~x1*x2*x3+~x1*x2*x4+x3*x4+x1
+52 
+Input vector
+0011011001001010
+Kirichenko
+7
+x1*x2*x3*~x4+x1*~x2*x3+~x1*~x2*x4+~x1*x3*x4+x1*~x2+~x3*~x4+~x1
+Min_Kirichenko
+6
+x1*x2*x3*~x4+x1*~x2*~x3+~x1*~x2*x4+~x1*x3*x4+~x3*~x4+~x1
+53 
+Input vector
+1111001011000101
+Kirichenko
+7
+~x1*~x2*x3*~x4+x1*x2*~x3+x1*x2*x4+x1*x3*x4+~x1*~x2+x3*~x4+x1
+Min_Kirichenko
+7
+~x1*~x2*x3*~x4+x1*x2*~x3+x1*x2*x4+x1*x3*x4+~x1*~x2+x3*~x4+x1
+54 
+Input vector
+0111010100101110
+Kirichenko
+7
+~x1*~x2*~x3*~x4+x1*~x2*~x3+~x1*x2*x4+~x1*x3*x4+~x1*~x2+x3*x4+x1
+Min_Kirichenko
+6
+~x1*~x2*~x3*~x4+x1*~x2*~x3+~x1*x2*x4+x1*x3*x4+~x1*~x2+x1
+55 
+Input vector
+1001101011010101
+Kirichenko
+7
+x1*x2*x3*~x4+~x1*x2*x3+x1*~x2*x4+~x1*x3*x4+x1*~x2+~x3*~x4+x1
+Min_Kirichenko
+6
+x1*x2*x3*~x4+~x1*x2*x3+x1*~x2*~x4+~x1*x3*x4+~x3*~x4+x1
+56 
+Input vector
+1010001110000100
+Kirichenko
+8
+x1*x2*x3*x4+x1*x2*x3*~x4+~x1*~x2*~x3+~x1*x2*x4+~x1*x3*x4+x1*x2+~x3*~x4+~x1
+Min_Kirichenko
+8
+x1*x2*x3*x4+x1*x2*x3*~x4+~x1*~x2*~x3+~x1*x2*x4+~x1*x3*x4+x1*x2+~x3*~x4+~x1
+57 
+Input vector
+0010001000110010
+Kirichenko
+7
+x1*x2*~x3*~x4+x1*x2*x3+x1*x2*x4+x1*x3*x4+x1*~x2+x3*~x4+x1
+Min_Kirichenko
+6
+x1*x2*~x3*~x4+x1*x2*x3+x1*x2*x4+x1*x3*x4+x1*x2+x3*~x4
+58 
+Input vector
+0011111011110011
+Kirichenko
+7
+~x1*~x2*~x3*~x4+x1*x2*x3+~x1*~x2*x4+x1*x3*x4+x1*~x2+x3*x4+~x1
+Min_Kirichenko
+6
+~x1*~x2*~x3*~x4+x1*x2*x3+~x1*~x2*x4+~x1*x3*x4+x1*~x2+~x1
+59 
+Input vector
+0011100101011100
+Kirichenko
+8
+x1*x2*x3*x4+x1*~x2*~x3*x4+x1*~x2*~x3+~x1*x2*x4+~x1*x3*x4+~x1*x2+x3*~x4+x1
+Min_Kirichenko
+6
+x1*x2*x3*x4+x1*~x2*~x3*~x4+~x1*x2*~x4+~x1*x3*x4+x3*~x4+x1
+60 
+Input vector
+1010101111111111
+Kirichenko
+7
+~x1*~x2*~x3*~x4+~x1*~x2*x3+~x1*x2*x4+x1*x3*x4+~x1*x2+x3*x4+x1
+Min_Kirichenko
+5
+~x1*~x2*~x3*~x4+~x1*~x2*x3+~x1*x2*~x4+~x1*x3*x4+x1
+61 
+Input vector
+0010111100011011
+Kirichenko
+7
+~x1*~x2*x3*x4+~x1*~x2*~x3+x1*x2*x4+~x1*x3*x4+x1*x2+x3*x4+~x1
+Min_Kirichenko
+5
+~x1*x2*x3*x4+~x1*~x2*~x3+x1*x2*~x4+x3*x4+~x1
+62 
+Input vector
+0010111011010011
+Kirichenko
+7
+x1*~x2*~x3*x4+~x1*x2*~x3+x1*~x2*x4+x1*x3*x4+x1*x2+x3*~x4+x1
+Min_Kirichenko
+4
+x1*x2*x3*x4+~x1*x2*~x3+x1*~x2+x3*~x4
+63 
+Input vector
+1011000000011010
+Kirichenko
+8
+x1*x2*x3*x4+~x1*~x2*~x3*~x4+~x1*~x2*x3+x1*x2*x4+~x1*x3*x4+x1*~x2+x3*x4+x1
+Min_Kirichenko
+5
+x1*x2*~x3*x4+~x1*~x2*~x3*~x4+~x1*~x2*x3+x1*x3*x4+x1*x2
+64 
+Input vector
+1100110000100001
+Kirichenko
+8
+x1*x2*x3*x4+x1*x2*~x3*x4+x1*x2*~x3+x1*x2*x4+~x1*x3*x4+x1*x2+x3*~x4+~x1
+Min_Kirichenko
+5
+x1*x2*~x3*~x4+~x1*x3*x4+x1*x2+x3*~x4+~x1
+65 
+Input vector
+0100010011011110
+Kirichenko
+8
+x1*x2*x3*x4+x1*~x2*~x3*x4+x1*~x2*~x3+x1*x2*x4+x1*x3*x4+x1*~x2+~x3*x4+x1
+Min_Kirichenko
+5
+x1*~x2*x3*x4+x1*~x2*~x3*~x4+x1*x2*x4+x1*x2+~x3*x4
+66 
+Input vector
+1100000111100000
+Kirichenko
+8
+x1*x2*x3*x4+~x1*x2*~x3*x4+~x1*~x2*~x3+~x1*x2*x4+~x1*x3*x4+x1*x2+x3*x4+x1
+Min_Kirichenko
+5
+x1*x2*x3*x4+~x1*~x2*x3*x4+~x1*~x2*~x3+x1*~x2+x3*x4
+67 
+Input vector
+0101000000100001
+Kirichenko
+8
+x1*x2*x3*x4+x1*x2*x3*x4+x1*~x2*~x3+~x1*~x2*x4+~x1*x3*x4+x1*x2+x3*x4+x1
+Min_Kirichenko
+6
+x1*x2*x3*x4+x1*x2*x3*x4+x1*~x2*~x3+~x1*~x2*x4+x1*x3*x4+x1*~x2
+68 
+Input vector
+0011111101000011
+Kirichenko
+7
+x1*x2*x3*~x4+~x1*~x2*x3+x1*~x2*x4+~x1*x3*x4+~x1*~x2+x3*x4+~x1
+Min_Kirichenko
+5
+x1*x2*x3*~x4+~x1*~x2*~x3+x1*~x2*x4+x1*x3*x4+~x1
+69 
+Input vector
+1110100101110001
+Kirichenko
+7
+~x1*~x2*~x3*~x4+x1*x2*x3+x1*x2*x4+~x1*x3*x4+~x1*~x2+~x3*~x4+x1
+Min_Kirichenko
+7
+~x1*~x2*~x3*~x4+x1*x2*x3+x1*x2*x4+~x1*x3*x4+~x1*~x2+~x3*~x4+x1
+70 
+Input vector
+1000011101111111
+Kirichenko
+7
+x1*~x2*x3*x4+x1*x2*~x3+x1*x2*x4+x1*x3*x4+~x1*x2+~x3*~x4+x1
+Min_Kirichenko
+4
+x1*x2*~x3*~x4+~x1*x2+~x3*~x4+x1
+71 
+Input vector
+0100100111000101
+Kirichenko
+7
+~x1*x2*x3*~x4+x1*~x2*~x3+x1*~x2*x4+x1*x3*x4+~x1*~x2+~x3*x4+~x1
+Min_Kirichenko
+6
+~x1*x2*x3*~x4+x1*~x2*~x3+x1*~x2*x4+x1*x3*x4+~x1*x2+~x3*x4
+72 
+Input vector
+0111110110110101
+Kirichenko
+7
+x1*~x2*x3*~x4+x1*x2*~x3+~x1*x2*x4+x1*x3*x4+~x1*x2+~x3*~x4+~x1
+Min_Kirichenko
+6
+x1*~x2*x3*~x4+x1*x2*~x3+~x1*x2*~x4+x1*x3*x4+~x3*~x4+~x1
+73 
+Input vector
+1110110111111011
+Kirichenko
+7
+x1*x2*x3*x4+~x1*x2*~x3+x1*x2*x4+x1*x3*x4+~x1*~x2+x3*x4+x1
+Min_Kirichenko
+6
+x1*~x2*x3*x4+~x1*x2*~x3+x1*x2*x4+~x1*~x2+x3*x4+x1
+74 
+Input vector
+1111100011100110
+Kirichenko
+8
+x1*x2*x3*x4+~x1*x2*~x3*~x4+x1*x2*~x3+x1*x2*x4+~x1*x3*x4+~x1*~x2+x3*x4+x1
+Min_Kirichenko
+5
+x1*x2*~x3*~x4+~x1*x2*~x3*~x4+x1*x3*x4+~x1*~x2+x1
+75 
+Input vector
+0100010000011011
+Kirichenko
+8
+x1*x2*x3*x4+x1*~x2*x3*~x4+x1*~x2*x3+x1*~x2*x4+x1*x3*x4+x1*~x2+~x3*x4+x1
+Min_Kirichenko
+4
+x1*~x2*~x3*x4+x1*~x2*x3*x4+x1*x2+~x3*x4
+76 
+Input vector
+0100001010000111
+Kirichenko
+8
+x1*x2*x3*x4+x1*~x2*x3*x4+~x1*~x2*x3+~x1*x2*x4+x1*x3*x4+x1*x2+~x3*~x4+~x1
+Min_Kirichenko
+6
+x1*~x2*x3*x4+~x1*~x2*x3+~x1*x2*x4+x1*x2+~x3*~x4+~x1
+77 
+Input vector
+1111011010110011
+Kirichenko
+7
+x1*x2*~x3*~x4+~x1*x2*x3+~x1*~x2*x4+~x1*x3*x4+~x1*~x2+~x3*x4+x1
+Min_Kirichenko
+6
+x1*x2*~x3*~x4+~x1*x2*x3+~x1*~x2*~x4+~x1*x3*x4+~x3*x4+x1
+78 
+Input vector
+0111111111000001
+Kirichenko
+8
+x1*x2*x3*x4+~x1*x2*x3*~x4+x1*x2*~x3+~x1*~x2*x4+x1*x3*x4+~x1*x2+x3*~x4+x1
+Min_Kirichenko
+7
+x1*~x2*x3*x4+~x1*x2*x3*~x4+x1*x2*~x3+~x1*~x2*x4+~x1*x2+x3*~x4+x1
+79 
+Input vector
+0001100110010011
+Kirichenko
+7
+~x1*x2*~x3*x4+~x1*~x2*~x3+x1*~x2*x4+x1*x3*x4+x1*~x2+x3*~x4+~x1
+Min_Kirichenko
+6
+~x1*x2*~x3*x4+~x1*~x2*~x3+x1*~x2*~x4+x1*x3*x4+x3*~x4+~x1
+80 
+Input vector
+0101111011101011
+Kirichenko
+7
+~x1*x2*~x3*~x4+~x1*x2*~x3+x1*~x2*x4+~x1*x3*x4+~x1*x2+~x3*x4+x1
+Min_Kirichenko
+6
+~x1*x2*~x3*x4+x1*~x2*x4+~x1*x3*x4+~x1*x2+~x3*x4+x1
+81 
+Input vector
+1000001000110001
+Kirichenko
+7
+x1*x2*x3*x4+x1*x2*x3+~x1*~x2*x4+x1*x3*x4+~x1*x2+x3*~x4+~x1
+Min_Kirichenko
+5
+x1*~x2*x3*x4+x1*x2*x3+~x1*~x2*x4+~x1*~x2+x3*~x4
+82 
+Input vector
+0101011111111111
+Kirichenko
+7
+~x1*~x2*~x3*x4+~x1*x2*~x3+~x1*x2*x4+x1*x3*x4+~x1*x2+x3*x4+x1
+Min_Kirichenko
+5
+~x1*~x2*~x3*x4+~x1*x2*x3+~x1*x2*x4+~x1*x3*x4+x1
+83 
+Input vector
+0000110000011001
+Kirichenko
+7
+x1*x2*x3*~x4+~x1*x2*~x3+x1*x2*x4+~x1*x3*x4+x1*~x2+x3*x4+x1
+Min_Kirichenko
+5
+x1*x2*x3*~x4+~x1*x2*~x3+x1*x2*x4+x1*x3*x4+x1*x2
+84 
+Input vector
+0100111000110001
+Kirichenko
+7
+x1*x2*x3*x4+x1*~x2*x3+~x1*~x2*x4+x1*x3*x4+~x1*~x2+x3*x4+~x1
+Min_Kirichenko
+4
+x1*~x2*x3*~x4+~x1*~x2*~x4+x3*x4+~x1
+85 
+Input vector
+0001001110101110
+Kirichenko
+8
+x1*x2*x3*x4+~x1*x2*x3*x4+~x1*x2*~x3+x1*~x2*x4+x1*x3*x4+~x1*x2+x3*x4+x1
+Min_Kirichenko
+5
+x1*~x2*~x3*x4+~x1*x2*x3*x4+~x1*x2*x3+x3*x4+x1
+86 
+Input vector
+0010001001101100
+Kirichenko
+8
+x1*x2*x3*x4+x1*x2*x3*~x4+x1*x2*x3+x1*~x2*x4+x1*x3*x4+x1*~x2+x3*~x4+x1
+Min_Kirichenko
+4
+x1*~x2*~x3*x4+x1*x2*x3*x4+x1*x2+x3*~x4
+87 
+Input vector
+0000010101010110
+Kirichenko
+8
+x1*x2*x3*x4+x1*~x2*x3*x4+x1*x2*~x3+~x1*~x2*x4+~x1*x3*x4+x1*~x2+~x3*x4+x1
+Min_Kirichenko
+7
+x1*x2*x3*x4+x1*~x2*x3*x4+x1*x2*~x3+~x1*~x2*x4+~x1*x3*x4+x1*x2+~x3*x4
+88 
+Input vector
+1001100110010001
+Kirichenko
+7
+x1*~x2*x3*x4+x1*x2*x3+x1*x2*x4+~x1*x3*x4+x1*~x2+~x3*~x4+x1
+Min_Kirichenko
+6
+x1*~x2*x3*x4+x1*x2*x3+x1*x2*x4+~x1*x3*x4+x1*x2+~x3*~x4
+89 
+Input vector
+1001011001101001
+Kirichenko
+8
+x1*x2*x3*x4+x1*~x2*~x3*~x4+x1*~x2*x3+x1*~x2*x4+~x1*x3*x4+~x1*~x2+~x3*~x4+~x1
+Min_Kirichenko
+7
+x1*x2*x3*x4+x1*~x2*~x3*~x4+x1*~x2*x3+x1*~x2*x4+~x1*x3*x4+~x1*x2+~x3*~x4
+90 
+Input vector
+1010010010011001
+Kirichenko
+7
+~x1*~x2*~x3*~x4+~x1*x2*~x3+~x1*~x2*x4+x1*x3*x4+~x1*x2+~x3*~x4+~x1
+Min_Kirichenko
+6
+~x1*~x2*~x3*~x4+~x1*x2*x3+~x1*~x2*x4+x1*x3*x4+~x3*~x4+~x1
+91 
+Input vector
+0101111111100000
+Kirichenko
+7
+x1*x2*x3*~x4+x1*x2*~x3+~x1*~x2*x4+~x1*x3*x4+~x1*x2+x3*x4+x1
+Min_Kirichenko
+6
+x1*x2*x3*~x4+x1*x2*~x3+~x1*~x2*x4+x1*x3*x4+~x1*x2+x1
+92 
+Input vector
+1111010111100011
+Kirichenko
+7
+x1*x2*x3*x4+x1*x2*~x3+~x1*x2*x4+~x1*x3*x4+~x1*~x2+x3*x4+x1
+Min_Kirichenko
+6
+x1*x2*x3*x4+x1*x2*~x3+~x1*x2*x4+x1*x3*x4+~x1*~x2+x1
+93 
+Input vector
+1010010011001011
+Kirichenko
+8
+x1*x2*x3*x4+~x1*~x2*x3*x4+x1*~x2*x3+x1*~x2*x4+x1*x3*x4+~x1*~x2+~x3*x4+x1
+Min_Kirichenko
+6
+x1*~x2*~x3*x4+~x1*~x2*x3*x4+x1*~x2*x3+~x1*~x2+~x3*x4+x1
+94 
+Input vector
+0101001001011010
+Kirichenko
+7
+~x1*~x2*x3*x4+~x1*x2*x3+~x1*x2*x4+x1*x3*x4+x1*~x2+~x3*x4+x1
+Min_Kirichenko
+6
+~x1*~x2*x3*x4+~x1*x2*x3+~x1*x2*x4+x1*x3*x4+x1*x2+~x3*x4
+95 
+Input vector
+1110011101010001
+Kirichenko
+7
+x1*x2*~x3*x4+~x1*x2*x3+~x1*~x2*x4+x1*x3*x4+~x1*x2+~x3*x4+~x1
+Min_Kirichenko
+6
+x1*x2*~x3*x4+~x1*x2*~x3+~x1*~x2*x4+x1*x3*x4+~x3*x4+~x1
+96 
+Input vector
+1001111110010101
+Kirichenko
+8
+x1*x2*x3*x4+x1*~x2*x3*~x4+~x1*~x2*x3+~x1*x2*x4+~x1*x3*x4+x1*~x2+~x3*x4+~x1
+Min_Kirichenko
+8
+x1*x2*x3*x4+x1*~x2*x3*~x4+~x1*~x2*x3+~x1*x2*x4+~x1*x3*x4+x1*~x2+~x3*x4+~x1
+97 
+Input vector
+1011111101110010
+Kirichenko
+7
+~x1*~x2*~x3*~x4+~x1*x2*x3+x1*~x2*x4+~x1*x3*x4+~x1*~x2+x3*~x4+~x1
+Min_Kirichenko
+6
+~x1*~x2*~x3*~x4+~x1*x2*x3+x1*~x2*x4+~x1*x3*x4+~x1*x2+x3*~x4
+98 
+Input vector
+0101011000010010
+Kirichenko
+8
+x1*x2*x3*x4+x1*x2*~x3*~x4+~x1*x2*x3+x1*~x2*x4+~x1*x3*x4+x1*~x2+~x3*x4+x1
+Min_Kirichenko
+7
+x1*x2*x3*x4+x1*x2*~x3*~x4+~x1*x2*x3+x1*~x2*~x4+~x1*x3*x4+~x3*x4+x1
+99 
+Input vector
+0101100101100101
+Kirichenko
+8
+x1*x2*x3*x4+x1*~x2*~x3*~x4+~x1*x2*~x3+x1*~x2*x4+~x1*x3*x4+x1*x2+~x3*x4+x1
+Min_Kirichenko
+7
+x1*x2*x3*x4+x1*~x2*~x3*~x4+~x1*x2*~x3+x1*~x2*x4+~x1*x3*x4+x1*~x2+~x3*x4
+100 
+Input vector
+0100100101100100
+Kirichenko
+8
+x1*x2*x3*x4+~x1*x2*~x3*~x4+x1*~x2*~x3+~x1*x2*x4+x1*x3*x4+x1*x2+~x3*x4+x1
+Min_Kirichenko
+6
+x1*~x2*x3*x4+~x1*x2*~x3*~x4+x1*~x2*~x3+~x1*x2*x4+x1*~x2+~x3*x4
