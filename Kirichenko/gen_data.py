@@ -1,7 +1,7 @@
 import random
-n = 9
+n = 3
 col = 100
-f = open('random_vecs_9_100.txt', 'w')
+f = open(f'random_vecs_{n}_100.txt', 'w')
 for i in range(col):
     l = []
     for x in range(2**n):

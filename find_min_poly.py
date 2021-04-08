@@ -230,25 +230,28 @@ def shenon(inputVec, firstLevel = False):
 
     return pol1 + pol2
 
-inputFunc = []
-inputFuncString = input()
+    
+if (__name__ == "__main__"):
+    inputFunc = []
+    inputFuncString = input()
 
-for c in inputFuncString:
-    if c == '0':
-        inputFunc += [0]
+    for c in inputFuncString:
+        if c == '0':
+            inputFunc += [0]
 
-    if c == '1':
-        inputFunc += [1]
+        if c == '1':
+            inputFunc += [1]
 
-zhigalkin = findZhegalkin(inputFunc)
+    zhigalkin = findZhegalkin(inputFunc)
 
-start = time.time()
-pol = shenon(inputFunc, True)
-end = time.time()
+    start = time.time()
+    print(inputFunc)
+    pol = shenon(inputFunc, True)
+    end = time.time()
 
-print(inputFuncString)
-printPol(pol, 1)
-print('')
-print('Result length: ' + str(len(pol)))
-print('Zhigalkin length: ' + str(sum(zhigalkin)))
-print('Result time: ' + str(end - start))
+    print(inputFuncString)
+    printPol(pol, 1)
+    print('')
+    print('Result length: ' + str(len(pol)))
+    print('Zhigalkin length: ' + str(sum(zhigalkin)))
+    print('Result time: ' + str(end - start))

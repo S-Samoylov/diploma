@@ -1,0 +1,900 @@
+1 
+Input vector
+10001011
+Kirichenko
+5
+x1*x2*x3+~x1*~x2*x3+~x1*~x2+x1*x3+x1
+Min_Kirichenko
+3
+x1*~x2*x3+~x1*~x2*~x3+x1
+2 
+Input vector
+00101010
+Kirichenko
+4
+~x1*x2*x3+~x1*x2+x1*x3+x1
+Min_Kirichenko
+2
+~x1*x2*~x3+x1*~x3
+3 
+Input vector
+00110110
+Kirichenko
+5
+x1*x2*x3+x1*x2*~x3+~x1*~x2+x1*x3+~x1
+Min_Kirichenko
+3
+x1*~x2*x3+x1*x2*~x3+~x1*x2
+4 
+Input vector
+10111111
+Kirichenko
+4
+~x1*x2*~x3+~x1*~x2+~x1*x3+x1
+Min_Kirichenko
+4
+~x1*x2*~x3+~x1*~x2+~x1*x3+x1
+5 
+Input vector
+11010110
+Kirichenko
+4
+~x1*x2*~x3+x1*x2+x1*x3+~x1
+Min_Kirichenko
+4
+~x1*x2*~x3+x1*x2+x1*x3+~x1
+6 
+Input vector
+10110111
+Kirichenko
+5
+x1*x2*x3+~x1*~x2*x3+x1*x2+x1*x3+~x1
+Min_Kirichenko
+4
+x1*~x2*x3+~x1*~x2*x3+x1*x2+~x1
+7 
+Input vector
+00001010
+Kirichenko
+5
+x1*x2*x3+x1*x2*~x3+x1*x2+x1*x3+x1
+Min_Kirichenko
+3
+x1*~x2*x3+x1*x2*x3+x1
+8 
+Input vector
+11101001
+Kirichenko
+4
+~x1*x2*x3+x1*~x2+x1*x3+~x1
+Min_Kirichenko
+4
+~x1*x2*x3+x1*~x2+x1*x3+~x1
+9 
+Input vector
+11101010
+Kirichenko
+4
+~x1*x2*~x3+~x1*~x2+x1*x3+x1
+Min_Kirichenko
+3
+~x1*x2*~x3+~x1*~x2+x1*~x3
+10 
+Input vector
+00110110
+Kirichenko
+5
+x1*x2*x3+x1*x2*~x3+~x1*~x2+x1*x3+~x1
+Min_Kirichenko
+3
+x1*~x2*x3+x1*x2*~x3+~x1*x2
+11 
+Input vector
+00111000
+Kirichenko
+4
+x1*x2*~x3+~x1*x2+x1*x3+x1
+Min_Kirichenko
+3
+x1*x2*~x3+~x1*x2+x1*~x3
+12 
+Input vector
+01010011
+Kirichenko
+5
+x1*x2*x3+x1*x2*x3+x1*~x2+~x1*x3+x1
+Min_Kirichenko
+4
+x1*x2*x3+x1*x2*x3+x1*x2+~x1*x3
+13 
+Input vector
+11010100
+Kirichenko
+5
+x1*x2*x3+~x1*x2*x3+~x1*x2+x1*x3+~x1
+Min_Kirichenko
+3
+x1*~x2*x3+~x1*x2*~x3+~x1
+14 
+Input vector
+01110110
+Kirichenko
+4
+~x1*~x2*~x3+x1*x2+x1*x3+~x1
+Min_Kirichenko
+4
+~x1*~x2*~x3+x1*x2+x1*x3+~x1
+15 
+Input vector
+11110011
+Kirichenko
+5
+x1*x2*x3+x1*~x2*x3+x1*x2+x1*x3+~x1
+Min_Kirichenko
+3
+x1*~x2*x3+x1*x2+~x1
+16 
+Input vector
+10101100
+Kirichenko
+5
+x1*x2*x3+x1*x2*x3+x1*~x2+~x1*x3+~x1
+Min_Kirichenko
+4
+x1*x2*x3+x1*x2*x3+x1*~x2+~x1*~x3
+17 
+Input vector
+00010100
+Kirichenko
+5
+x1*x2*x3+~x1*x2*~x3+~x1*~x2+x1*x3+~x1
+Min_Kirichenko
+3
+x1*~x2*x3+~x1*x2*~x3+~x1*x2
+18 
+Input vector
+01001100
+Kirichenko
+4
+~x1*x2*x3+x1*x2+~x1*x3+x1
+Min_Kirichenko
+2
+~x1*~x2*x3+x1*~x2
+19 
+Input vector
+10010011
+Kirichenko
+5
+x1*x2*x3+x1*x2*~x3+~x1*x2+~x1*x3+~x1
+Min_Kirichenko
+4
+x1*x2*x3+x1*x2*~x3+~x1*~x2+~x1*x3
+20 
+Input vector
+11101110
+Kirichenko
+5
+x1*x2*x3+~x1*~x2*~x3+~x1*x2+~x1*x3+x1
+Min_Kirichenko
+5
+x1*x2*x3+~x1*~x2*~x3+~x1*x2+~x1*x3+x1
+21 
+Input vector
+10110111
+Kirichenko
+5
+x1*x2*x3+~x1*~x2*x3+x1*x2+x1*x3+~x1
+Min_Kirichenko
+4
+x1*~x2*x3+~x1*~x2*x3+x1*x2+~x1
+22 
+Input vector
+11110111
+Kirichenko
+4
+x1*x2*x3+x1*x2+x1*x3+~x1
+Min_Kirichenko
+3
+x1*~x2*x3+x1*x2+~x1
+23 
+Input vector
+10100111
+Kirichenko
+4
+x1*~x2*x3+x1*x2+~x1*x3+~x1
+Min_Kirichenko
+3
+x1*~x2*x3+x1*x2+~x1*~x3
+24 
+Input vector
+10101100
+Kirichenko
+5
+x1*x2*x3+x1*x2*x3+x1*~x2+~x1*x3+~x1
+Min_Kirichenko
+4
+x1*x2*x3+x1*x2*x3+x1*~x2+~x1*~x3
+25 
+Input vector
+01111010
+Kirichenko
+4
+~x1*~x2*x3+~x1*x2+x1*x3+x1
+Min_Kirichenko
+3
+~x1*~x2*x3+~x1*x2+x1*~x3
+26 
+Input vector
+01101000
+Kirichenko
+4
+x1*~x2*~x3+~x1*~x2+~x1*x3+~x1
+Min_Kirichenko
+3
+x1*~x2*~x3+~x1*x2+~x1*x3
+27 
+Input vector
+00111110
+Kirichenko
+4
+x1*~x2*x3+~x1*x2+x1*x3+x1
+Min_Kirichenko
+3
+x1*x2*x3+~x1*x2+x1
+28 
+Input vector
+11100101
+Kirichenko
+4
+~x1*x2*~x3+~x1*x2+x1*x3+~x1
+Min_Kirichenko
+3
+~x1*x2*x3+x1*x3+~x1
+29 
+Input vector
+00111101
+Kirichenko
+4
+x1*~x2*~x3+~x1*~x2+x1*x3+~x1
+Min_Kirichenko
+3
+x1*~x2*~x3+~x1*x2+x1*x3
+30 
+Input vector
+01111110
+Kirichenko
+5
+x1*x2*x3+~x1*x2*x3+~x1*x2+~x1*x3+x1
+Min_Kirichenko
+4
+x1*x2*x3+~x1*~x2*x3+~x1*x2+x1
+31 
+Input vector
+01110111
+Kirichenko
+5
+x1*x2*x3+~x1*~x2*~x3+x1*x2+x1*x3+~x1
+Min_Kirichenko
+4
+x1*~x2*x3+~x1*~x2*~x3+x1*x2+~x1
+32 
+Input vector
+00110100
+Kirichenko
+4
+x1*x2*x3+~x1*~x2+x1*x3+~x1
+Min_Kirichenko
+2
+x1*~x2*x3+~x1*x2
+33 
+Input vector
+00101011
+Kirichenko
+5
+x1*x2*x3+~x1*x2*x3+~x1*x2+x1*x3+x1
+Min_Kirichenko
+3
+x1*~x2*x3+~x1*x2*~x3+x1
+34 
+Input vector
+01100010
+Kirichenko
+4
+x1*x2*~x3+~x1*~x2+~x1*x3+~x1
+Min_Kirichenko
+3
+x1*x2*~x3+~x1*x2+~x1*x3
+35 
+Input vector
+01001000
+Kirichenko
+5
+x1*x2*x3+~x1*~x2*x3+x1*x2+x1*x3+x1
+Min_Kirichenko
+3
+x1*~x2*x3+~x1*~x2*x3+x1*~x2
+36 
+Input vector
+00010011
+Kirichenko
+4
+~x1*~x2*x3+x1*~x2+~x1*x3+x1
+Min_Kirichenko
+2
+~x1*x2*x3+x1*x2
+37 
+Input vector
+00101010
+Kirichenko
+4
+~x1*x2*x3+~x1*x2+x1*x3+x1
+Min_Kirichenko
+2
+~x1*x2*~x3+x1*~x3
+38 
+Input vector
+00000100
+Kirichenko
+4
+x1*x2*~x3+x1*~x2+x1*x3+x1
+Min_Kirichenko
+3
+x1*x2*~x3+x1*x2+x1*x3
+39 
+Input vector
+10001011
+Kirichenko
+5
+x1*x2*x3+~x1*~x2*x3+~x1*~x2+x1*x3+x1
+Min_Kirichenko
+3
+x1*~x2*x3+~x1*~x2*~x3+x1
+40 
+Input vector
+11000110
+Kirichenko
+5
+x1*x2*x3+x1*x2*~x3+~x1*x2+x1*x3+~x1
+Min_Kirichenko
+3
+x1*~x2*x3+x1*x2*~x3+~x1*~x2
+41 
+Input vector
+01010010
+Kirichenko
+4
+x1*x2*x3+x1*~x2+~x1*x3+x1
+Min_Kirichenko
+3
+x1*x2*x3+x1*x2+~x1*x3
+42 
+Input vector
+00010010
+Kirichenko
+5
+x1*x2*x3+~x1*~x2*x3+x1*~x2+~x1*x3+x1
+Min_Kirichenko
+3
+x1*x2*x3+~x1*x2*x3+x1*x2
+43 
+Input vector
+10001011
+Kirichenko
+5
+x1*x2*x3+~x1*~x2*x3+~x1*~x2+x1*x3+x1
+Min_Kirichenko
+3
+x1*~x2*x3+~x1*~x2*~x3+x1
+44 
+Input vector
+10001000
+Kirichenko
+5
+x1*x2*x3+~x1*~x2*~x3+x1*x2+x1*x3+x1
+Min_Kirichenko
+3
+x1*~x2*x3+~x1*~x2*~x3+x1*~x2
+45 
+Input vector
+01011010
+Kirichenko
+5
+x1*x2*x3+x1*~x2*~x3+x1*~x2+~x1*x3+x1
+Min_Kirichenko
+4
+x1*x2*x3+x1*~x2*x3+~x1*x3+x1
+46 
+Input vector
+11010000
+Kirichenko
+4
+~x1*~x2*x3+~x1*x2+~x1*x3+~x1
+Min_Kirichenko
+2
+~x1*x2*~x3+~x1
+47 
+Input vector
+11001110
+Kirichenko
+4
+x1*~x2*x3+~x1*~x2+x1*x3+x1
+Min_Kirichenko
+3
+x1*x2*x3+~x1*~x2+x1
+48 
+Input vector
+11010000
+Kirichenko
+4
+~x1*~x2*x3+~x1*x2+~x1*x3+~x1
+Min_Kirichenko
+2
+~x1*x2*~x3+~x1
+49 
+Input vector
+01000110
+Kirichenko
+4
+~x1*~x2*x3+x1*~x2+x1*x3+x1
+Min_Kirichenko
+3
+~x1*~x2*x3+x1*x2+x1*x3
+50 
+Input vector
+00000101
+Kirichenko
+5
+x1*x2*x3+x1*x2*~x3+x1*~x2+x1*x3+x1
+Min_Kirichenko
+3
+x1*~x2*~x3+x1*x2*~x3+x1
+51 
+Input vector
+01100001
+Kirichenko
+4
+x1*x2*x3+~x1*~x2+~x1*x3+~x1
+Min_Kirichenko
+3
+x1*x2*x3+~x1*x2+~x1*x3
+52 
+Input vector
+11111100
+Kirichenko
+5
+x1*x2*x3+x1*~x2*x3+x1*~x2+x1*x3+~x1
+Min_Kirichenko
+2
+x1*~x2*~x3+~x1
+53 
+Input vector
+00010110
+Kirichenko
+4
+~x1*x2*x3+x1*~x2+x1*x3+x1
+Min_Kirichenko
+3
+~x1*x2*x3+x1*x2+x1*x3
+54 
+Input vector
+11001101
+Kirichenko
+4
+x1*~x2*~x3+~x1*x2+x1*x3+~x1
+Min_Kirichenko
+3
+x1*~x2*~x3+~x1*~x2+x1*x3
+55 
+Input vector
+11001110
+Kirichenko
+4
+x1*~x2*x3+~x1*~x2+x1*x3+x1
+Min_Kirichenko
+3
+x1*x2*x3+~x1*~x2+x1
+56 
+Input vector
+00001111
+Kirichenko
+5
+x1*x2*x3+x1*~x2*~x3+x1*~x2+x1*x3+x1
+Min_Kirichenko
+2
+x1*~x2*~x3+x1
+57 
+Input vector
+10100101
+Kirichenko
+5
+x1*x2*x3+x1*~x2*~x3+x1*~x2+~x1*x3+~x1
+Min_Kirichenko
+3
+x1*x2*x3+x1*~x2*x3+~x1*~x3
+58 
+Input vector
+01001110
+Kirichenko
+5
+x1*x2*x3+~x1*x2*~x3+~x1*x2+~x1*x3+x1
+Min_Kirichenko
+3
+x1*x2*x3+~x1*~x2*x3+x1
+59 
+Input vector
+00101010
+Kirichenko
+4
+~x1*x2*x3+~x1*x2+x1*x3+x1
+Min_Kirichenko
+2
+~x1*x2*~x3+x1*~x3
+60 
+Input vector
+00100011
+Kirichenko
+4
+~x1*~x2*~x3+x1*x2+~x1*x3+~x1
+Min_Kirichenko
+3
+~x1*~x2*~x3+x1*x2+~x1*~x3
+61 
+Input vector
+10110111
+Kirichenko
+5
+x1*x2*x3+~x1*~x2*x3+x1*x2+x1*x3+~x1
+Min_Kirichenko
+4
+x1*~x2*x3+~x1*~x2*x3+x1*x2+~x1
+62 
+Input vector
+01100111
+Kirichenko
+4
+x1*~x2*~x3+~x1*x2+~x1*x3+x1
+Min_Kirichenko
+4
+x1*~x2*~x3+~x1*x2+~x1*x3+x1
+63 
+Input vector
+10011011
+Kirichenko
+4
+x1*~x2*x3+~x1*~x2+~x1*x3+x1
+Min_Kirichenko
+4
+x1*~x2*x3+~x1*~x2+~x1*x3+x1
+64 
+Input vector
+00010000
+Kirichenko
+4
+~x1*~x2*~x3+~x1*x2+~x1*x3+~x1
+Min_Kirichenko
+3
+~x1*~x2*~x3+~x1*~x2+~x1*x3
+65 
+Input vector
+10010101
+Kirichenko
+5
+x1*x2*x3+x1*~x2*x3+~x1*x2+~x1*x3+~x1
+Min_Kirichenko
+4
+x1*x2*x3+x1*~x2*x3+~x1*~x2+~x1*x3
+66 
+Input vector
+00101011
+Kirichenko
+5
+x1*x2*x3+~x1*x2*x3+~x1*x2+x1*x3+x1
+Min_Kirichenko
+3
+x1*~x2*x3+~x1*x2*~x3+x1
+67 
+Input vector
+00101111
+Kirichenko
+4
+~x1*~x2*x3+~x1*x2+~x1*x3+x1
+Min_Kirichenko
+2
+~x1*x2*~x3+x1
+68 
+Input vector
+01110110
+Kirichenko
+4
+~x1*~x2*~x3+x1*x2+x1*x3+~x1
+Min_Kirichenko
+4
+~x1*~x2*~x3+x1*x2+x1*x3+~x1
+69 
+Input vector
+10111110
+Kirichenko
+5
+x1*x2*x3+~x1*x2*~x3+~x1*~x2+~x1*x3+x1
+Min_Kirichenko
+5
+x1*x2*x3+~x1*x2*~x3+~x1*~x2+~x1*x3+x1
+70 
+Input vector
+11011110
+Kirichenko
+5
+x1*x2*x3+~x1*~x2*x3+~x1*~x2+~x1*x3+x1
+Min_Kirichenko
+4
+x1*x2*x3+~x1*x2*x3+~x1*~x2+x1
+71 
+Input vector
+01101100
+Kirichenko
+5
+x1*x2*x3+x1*x2*~x3+~x1*x2+~x1*x3+x1
+Min_Kirichenko
+5
+x1*x2*x3+x1*x2*~x3+~x1*x2+~x1*x3+x1
+72 
+Input vector
+01000000
+Kirichenko
+4
+~x1*x2*~x3+~x1*~x2+~x1*x3+~x1
+Min_Kirichenko
+3
+~x1*x2*~x3+~x1*x2+~x1*x3
+73 
+Input vector
+01110000
+Kirichenko
+4
+~x1*x2*x3+~x1*~x2+~x1*x3+~x1
+Min_Kirichenko
+2
+~x1*~x2*~x3+~x1
+74 
+Input vector
+00110101
+Kirichenko
+5
+x1*x2*x3+x1*x2*x3+~x1*~x2+x1*x3+~x1
+Min_Kirichenko
+3
+x1*~x2*x3+x1*x2*x3+~x1*x2
+75 
+Input vector
+11000101
+Kirichenko
+5
+x1*x2*x3+x1*x2*x3+~x1*x2+x1*x3+~x1
+Min_Kirichenko
+3
+x1*~x2*x3+x1*x2*x3+~x1*~x2
+76 
+Input vector
+00000000
+Kirichenko
+5
+x1*x2*x3+x1*~x2*~x3+x1*x2+x1*x3+x1
+Min_Kirichenko
+3
+x1*~x2*x3+x1*~x2*~x3+x1*~x2
+77 
+Input vector
+00111111
+Kirichenko
+5
+x1*x2*x3+x1*~x2*x3+~x1*x2+x1*x3+x1
+Min_Kirichenko
+3
+x1*~x2*x3+~x1*x2+x1
+78 
+Input vector
+00100001
+Kirichenko
+5
+x1*x2*x3+~x1*~x2*x3+~x1*~x2+~x1*x3+~x1
+Min_Kirichenko
+3
+x1*x2*x3+~x1*x2*x3+~x1*x2
+79 
+Input vector
+11110111
+Kirichenko
+4
+x1*x2*x3+x1*x2+x1*x3+~x1
+Min_Kirichenko
+3
+x1*~x2*x3+x1*x2+~x1
+80 
+Input vector
+01101110
+Kirichenko
+4
+x1*x2*x3+~x1*x2+~x1*x3+x1
+Min_Kirichenko
+4
+x1*x2*x3+~x1*x2+~x1*x3+x1
+81 
+Input vector
+10100111
+Kirichenko
+4
+x1*~x2*x3+x1*x2+~x1*x3+~x1
+Min_Kirichenko
+3
+x1*~x2*x3+x1*x2+~x1*~x3
+82 
+Input vector
+10011010
+Kirichenko
+5
+x1*x2*x3+x1*~x2*x3+~x1*~x2+~x1*x3+x1
+Min_Kirichenko
+5
+x1*x2*x3+x1*~x2*x3+~x1*~x2+~x1*x3+x1
+83 
+Input vector
+01000101
+Kirichenko
+4
+~x1*~x2*~x3+~x1*x2+x1*x3+~x1
+Min_Kirichenko
+3
+~x1*~x2*~x3+~x1*~x2+x1*x3
+84 
+Input vector
+00000101
+Kirichenko
+5
+x1*x2*x3+x1*x2*~x3+x1*~x2+x1*x3+x1
+Min_Kirichenko
+3
+x1*~x2*~x3+x1*x2*~x3+x1
+85 
+Input vector
+11010010
+Kirichenko
+5
+x1*x2*x3+~x1*~x2*~x3+x1*~x2+~x1*x3+x1
+Min_Kirichenko
+4
+x1*x2*x3+~x1*~x2*~x3+x1*x2+~x1*x3
+86 
+Input vector
+11110010
+Kirichenko
+4
+x1*~x2*x3+x1*x2+x1*x3+~x1
+Min_Kirichenko
+2
+x1*x2*~x3+~x1
+87 
+Input vector
+10010110
+Kirichenko
+5
+x1*x2*x3+x1*~x2*~x3+~x1*~x2+~x1*x3+x1
+Min_Kirichenko
+5
+x1*x2*x3+x1*~x2*~x3+~x1*~x2+~x1*x3+x1
+88 
+Input vector
+10010101
+Kirichenko
+5
+x1*x2*x3+x1*~x2*x3+~x1*x2+~x1*x3+~x1
+Min_Kirichenko
+4
+x1*x2*x3+x1*~x2*x3+~x1*~x2+~x1*x3
+89 
+Input vector
+00110101
+Kirichenko
+5
+x1*x2*x3+x1*x2*x3+~x1*~x2+x1*x3+~x1
+Min_Kirichenko
+3
+x1*~x2*x3+x1*x2*x3+~x1*x2
+90 
+Input vector
+11001010
+Kirichenko
+5
+x1*x2*x3+x1*x2*x3+~x1*~x2+x1*x3+x1
+Min_Kirichenko
+4
+x1*~x2*x3+x1*x2*x3+~x1*~x2+x1
+91 
+Input vector
+10101001
+Kirichenko
+5
+x1*x2*x3+x1*~x2*x3+x1*~x2+~x1*x3+~x1
+Min_Kirichenko
+3
+x1*x2*x3+x1*~x2*~x3+~x1*~x3
+92 
+Input vector
+11111010
+Kirichenko
+5
+x1*x2*x3+x1*x2*~x3+x1*~x2+x1*x3+~x1
+Min_Kirichenko
+3
+x1*~x2*~x3+x1*x2*~x3+~x1
+93 
+Input vector
+00100101
+Kirichenko
+4
+~x1*x2*x3+~x1*~x2+x1*x3+~x1
+Min_Kirichenko
+3
+~x1*x2*x3+~x1*x2+x1*x3
+94 
+Input vector
+11000010
+Kirichenko
+4
+x1*~x2*~x3+~x1*~x2+x1*x3+x1
+Min_Kirichenko
+3
+x1*~x2*~x3+~x1*~x2+x1*~x3
+95 
+Input vector
+11010101
+Kirichenko
+4
+~x1*x2*x3+~x1*x2+x1*x3+~x1
+Min_Kirichenko
+3
+~x1*x2*~x3+x1*x3+~x1
+96 
+Input vector
+10001000
+Kirichenko
+5
+x1*x2*x3+~x1*~x2*~x3+x1*x2+x1*x3+x1
+Min_Kirichenko
+3
+x1*~x2*x3+~x1*~x2*~x3+x1*~x2
+97 
+Input vector
+00111100
+Kirichenko
+5
+x1*x2*x3+x1*~x2*~x3+~x1*~x2+x1*x3+~x1
+Min_Kirichenko
+3
+x1*~x2*x3+x1*~x2*~x3+~x1*x2
+98 
+Input vector
+01011000
+Kirichenko
+4
+x1*~x2*x3+x1*x2+~x1*x3+x1
+Min_Kirichenko
+3
+x1*~x2*x3+x1*~x2+~x1*x3
+99 
+Input vector
+01000100
+Kirichenko
+5
+x1*x2*x3+~x1*~x2*~x3+~x1*x2+x1*x3+~x1
+Min_Kirichenko
+3
+x1*~x2*x3+~x1*~x2*~x3+~x1*~x2
+100 
+Input vector
+01010100
+Kirichenko
+4
+x1*~x2*~x3+x1*x2+~x1*x3+x1
+Min_Kirichenko
+3
+x1*~x2*~x3+x1*~x2+~x1*x3
