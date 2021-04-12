@@ -20,14 +20,14 @@ def c(vect, N, m): #list vect n, m
         a[i] = i + 1
     s = []
     for i in a[:m]:
-        s.append(vect[i-1])
+        s.append(vect[i-1])     
         if (kir_one_shadow.check_shadow_full(s)):
             print(s)
             num += 1
     #l.append(s)
     if (N >= m):
         while (NextSet(a, N, m)):
-            #print(a[:m])
+            #print(a[:m], a, N, m)
             if (a[1] >= math.comb(int(n),1)+1): break
             s = []
             for i in a[:m]:
@@ -42,7 +42,7 @@ def c(vect, N, m): #list vect n, m
     
 def gen_all_shadows(n):
     vs = kir_one_shadow.gen_min_shadow(n)
-    #print(len(vs))
+    print(vs)
     min_len = len(vs)
     allvec = []
     for i in range(2**n - 1, -1, -1):
@@ -57,7 +57,7 @@ n = input()
 start = time.time()
 result = gen_all_shadows(int(n))
 end = time.time()
-f = open(f'n_{n}_all_shadows_time.txt', 'w')
-f.writelines(str(result) + '\n')
-f.writelines(str(end-start) + '\n')
-f.close()
+#f = open(f'n_{n}_all_shadows_time.txt', 'w')
+#f.writelines(str(result) + '\n')
+#f.writelines(str(end-start) + '\n')
+#f.close()

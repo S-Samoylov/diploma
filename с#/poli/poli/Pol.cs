@@ -22,11 +22,12 @@ namespace poli
                 inputValue += vector[i] * power;
                 power *= 2;
             }
-
+            //Console.WriteLine("ttt" + inputValue.ToString());
             List<int> zhigalkin = Zhigalkin.parse(vector);
             threshold = zhigalkin.Count;
-
+            //Console.WriteLine("zh" + threshold.ToString());
             List<int> result = walkTree(0, 0, 0);
+            //Console.WriteLine("res " + result[0].ToString());
             if (result.Count == 0)
             {
                 result = zhigalkin;
@@ -39,7 +40,7 @@ namespace poli
             return result;
         }
 
-        public static List<int> multiByVar(int var, List<int> pol, int place)
+        public static List<int> multiByVar(int var, List<int> pol, int place, bool afterWalkTree = false)
         {
             List<int> result = new List<int>();
 
@@ -54,21 +55,28 @@ namespace poli
                     newCon /= 3;
                     power *= 3;
                 }
-
-                if (con != Conjunction.ONE)
+                if (afterWalkTree)
                 {
-                    newCon = (newCon * 3 + var) * power + (con % power);
-                } else
-                {
-                    if (var > 0)
+                    if (con != Conjunction.ONE)
                     {
-                        newCon = var * power;
-                    } else
+                        newCon = (newCon * 3 + var) * power + (con % power);
+                    }
+                    else
                     {
-                        newCon = con;
+                        if (var > 0)
+                        {
+                            newCon = var * power;
+                        }
+                        else
+                        {
+                            newCon = con;
+                        }
                     }
                 }
-
+                else
+                {
+                    newCon = (newCon * 3 + var) * power + (con % power);
+                }
                 result.Add(newCon);
             }
 
@@ -113,7 +121,9 @@ namespace poli
         {
             if (currentPolValue == inputValue)
             {
-                return new List<int>() { currentConNumber };
+                List<int> l =  new List<int>() { currentConNumber };
+                //Console.WriteLine("count " + l.Count.ToString() + " currentnum " + l[0].ToString());
+                return l;
             }
 
             if (depth == threshold)
@@ -125,6 +135,7 @@ namespace poli
             for (int i = currentConNumber + 1; i < Conjunction.conValues.Length; i++)
             {
                 int vecSum = Conjunction.conValues[i] ^ currentPolValue;
+                //if (i == 1) Console.WriteLine(i.ToString() + " vecSum " + vecSum.ToString()); 
                 List<int> result = walkTree(i, vecSum, depth + 1);
 
                 if (result.Count > 0 && (minPol.Count == 0 || result.Count + 1 < minPol.Count))
@@ -133,7 +144,16 @@ namespace poli
                     minPol.Add(currentConNumber);
                 }
             }
-
+            /*
+            if (minPol.Count > 0)
+            {
+                Console.WriteLine("Start");
+                for (int i = 0; i < minPol.Count; i++)
+                {
+                    Console.Write(minPol[i].ToString() + ' ');
+                }
+                Console.WriteLine();
+            }*/
             return minPol;
         }
     }

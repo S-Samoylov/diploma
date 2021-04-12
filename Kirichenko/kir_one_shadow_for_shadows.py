@@ -116,6 +116,7 @@ def value_by_poly(poly): #list of lists/tuples
     return result_poly.tolist()  
 
 def gen_min_shadow(n):
+    '''
     shadow = []
     rank = n
     s = set() 
@@ -149,6 +150,12 @@ def gen_min_shadow(n):
     #print(shadow)
     #print(s)
     #print(check_shadow_full(shadow))
+    '''
+    inp = [int(x) for x in input().replace('[','').replace(']','').split(',')]
+    shadow = []
+    for i in range(n,len(inp)+1,n):
+        shadow.append(inp[i-n:i])
+    print(shadow)
     return shadow 
 
 def logic_minimize(s):
@@ -267,13 +274,11 @@ def kir_with_min(vector, param = 1): #param = 0 - without minimize input_vec - s
         return result_poly
 
 if (__name__ == "__main__"):
-    f = '1111110110100110001101011111110011101101010111101110010001111101'
-    #f = input()
+    #f = '10111100101101111110100101001000'
+    f = input()
     print('Input vector')
     print(f)
-    print(parseZhigalkin(findZhegalkin([int(x) for x in f])))
-    print(''.join(str(x) for x in value_by_poly(parseZhigalkin(findZhegalkin([int(x) for x in f])))))
-    res = kir_with_min(f, 1)
+    res = kir_with_min(f, 0)
     print('Kirichenko')
     print(len(res))
     print(poli_output(res))

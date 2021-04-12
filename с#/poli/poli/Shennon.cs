@@ -35,6 +35,7 @@ namespace poli
             List<int> minPol = new List<int>();
 
             for (int i = 0; i < n; i++)
+            //for (int i = n; i > 0; i--)
             {
                 int j = 0;
                 int k = (int) Math.Pow(2, i);
@@ -79,20 +80,44 @@ namespace poli
 
                 if (minPol.Count == 0 || pol0.Count + pol1.Count < minPol.Count)
                 {
-                    minPol = Pol.multiByVar(1, pol1, i);
-                    minPol.AddRange(Pol.multiByVar(2, pol0, i));
+                    if (n == LIMIT + 1)
+                    {
+                        minPol = Pol.multiByVar(1, pol1, i, true);
+                        minPol.AddRange(Pol.multiByVar(2, pol0, i, true));
+                    }
+                    else
+                    {
+                        minPol = Pol.multiByVar(1, pol1, i);
+                        minPol.AddRange(Pol.multiByVar(2, pol0, i));
+                    }
                 }
 
                 if (minPol.Count == 0 || polSum.Count + pol0.Count < minPol.Count)
                 {
-                    minPol = Pol.multiByVar(1, polSum, i);
-                    minPol.AddRange(Pol.multiByVar(0, pol0, i));
+                    if (n == LIMIT + 1)
+                    {
+                        minPol = Pol.multiByVar(1, polSum, i, true);
+                        minPol.AddRange(Pol.multiByVar(0, pol0, i, true));
+                    }
+                    else
+                    {
+                        minPol = Pol.multiByVar(1, polSum, i);
+                        minPol.AddRange(Pol.multiByVar(0, pol0, i));
+                    }
                 }
 
                 if (minPol.Count == 0 || pol1.Count + polSum.Count < minPol.Count)
                 {
-                    minPol = Pol.multiByVar(0, pol1, i);
-                    minPol.AddRange(Pol.multiByVar(2, polSum, i));
+                    if (n == LIMIT + 1)
+                    {
+                        minPol = Pol.multiByVar(0, pol1, i, true);
+                        minPol.AddRange(Pol.multiByVar(2, polSum, i, true));
+                    }
+                    else
+                    {
+                        minPol = Pol.multiByVar(0, pol1, i);
+                        minPol.AddRange(Pol.multiByVar(2, polSum, i));
+                    }
                 }
             }
 
@@ -117,9 +142,9 @@ namespace poli
 
             List<int> minPol = new List<int>();
             List<Task<List<int>>> taskPool = new List<Task<List<int>>>();
-
             for (int i = 0; i < n; i++)
             {
+                //Console.WriteLine("FindParall " + i.ToString());
                 int j = 0;
                 int k = (int)Math.Pow(2, i);
 
@@ -157,35 +182,82 @@ namespace poli
 
                     j++;
                 }
-
+                /*
+                if (i == 0)
+                {
+                    Console.WriteLine("i = 0");
+                    Console.WriteLine("vector0");
+                    for (int ij = 0; ij < vector0.Length; ij++)
+                    {
+                        Console.Write(vector0[ij].ToString() + " ");
+                    }
+                    Console.WriteLine("vector1");
+                    for (int ij = 0; ij < vector1.Length; ij++)
+                    {
+                        Console.Write(vector1[ij].ToString() + " ");
+                    }
+                    Console.WriteLine("vectorSum");
+                    for (int ij = 0; ij < vectorSum.Length; ij++)
+                    {
+                        Console.Write(vectorSum[ij].ToString() + " ");
+                    }
+                }
+                */
                 taskPool.Add(find(vector0));
                 taskPool.Add(find(vector1));
                 taskPool.Add(find(vectorSum));
             }
-
+      //      Console.WriteLine("taskPool = " + taskPool.Count);
+            //int ijk = 0;
+            int ijk = 0;
             for (int i = 0; i < taskPool.Count; i += 3)
             {
+                //Console.WriteLine("ijk = " + ijk.ToString());
                 List<int> pol0 = taskPool[i].Result;
                 List<int> pol1 = taskPool[i + 1].Result;
                 List<int> polSum = taskPool[i + 2].Result;
-
                 if (minPol.Count == 0 || pol0.Count + pol1.Count < minPol.Count)
                 {
-                    minPol = Pol.multiByVar(1, pol1, i);
-                    minPol.AddRange(Pol.multiByVar(2, pol0, i));
+                    if (n == LIMIT + 1)
+                    {
+                        minPol = Pol.multiByVar(1, pol1, ijk, true);
+                        minPol.AddRange(Pol.multiByVar(2, pol0, ijk, true));
+                    }
+                    else
+                    {
+                        minPol = Pol.multiByVar(1, pol1, ijk);
+                        minPol.AddRange(Pol.multiByVar(2, pol0, ijk));
+                    }
                 }
 
                 if (minPol.Count == 0 || polSum.Count + pol0.Count < minPol.Count)
                 {
-                    minPol = Pol.multiByVar(1, polSum, i);
-                    minPol.AddRange(Pol.multiByVar(0, pol0, i));
+                    if (n == LIMIT + 1)
+                    {
+                        minPol = Pol.multiByVar(1, polSum, ijk, true);
+                        minPol.AddRange(Pol.multiByVar(0, pol0, ijk, true));
+                    }
+                    else
+                    {
+                        minPol = Pol.multiByVar(1, polSum, ijk);
+                        minPol.AddRange(Pol.multiByVar(0, pol0, ijk));
+                    }
                 }
 
                 if (minPol.Count == 0 || pol1.Count + polSum.Count < minPol.Count)
                 {
-                    minPol = Pol.multiByVar(0, pol1, i);
-                    minPol.AddRange(Pol.multiByVar(2, polSum, i));
+                    if (n == LIMIT + 1)
+                    {
+                        minPol = Pol.multiByVar(0, pol1, ijk, true);
+                        minPol.AddRange(Pol.multiByVar(2, polSum, ijk, true));
+                    }
+                    else
+                    {
+                        minPol = Pol.multiByVar(0, pol1, ijk);
+                        minPol.AddRange(Pol.multiByVar(2, polSum, ijk));
+                    }
                 }
+                ++ijk;
             }
 
             vecValues[vector] = minPol;

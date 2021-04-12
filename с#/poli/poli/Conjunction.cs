@@ -16,9 +16,9 @@ namespace poli
         {
             int argMax = (int)Math.Pow(2, n);
             int length = (int) Math.Pow(3, n);
-
             ONE = length;
 
+            //prepare for all con
             conValues = new int[length + 1];
 
             for (int i = 0; i < length; i++)
@@ -30,12 +30,18 @@ namespace poli
                 {
                     thruthVector += power * value(i, j);
                     power *= 2;
+                    //if (i == 1) Console.WriteLine("thruthVector" + i.ToString() + "=" + thruthVector.ToString());
                 }
-
+                if (true)
+                {
+                    
+                   //Console.WriteLine("thruthVector " + i.ToString() + " "+ Conjunction.toString(i,n) + " " + thruthVector.ToString());
+                }
                 conValues[i] = thruthVector;
             }
 
             conValues[ONE] = (int) Math.Pow(2, argMax) - 1;
+
         }
 
         public static string toString(int con, int n)
@@ -121,7 +127,6 @@ namespace poli
                 arg /= 2;
                 con /= 3;
             }
-
             return value;
         }
     }
