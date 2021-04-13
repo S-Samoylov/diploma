@@ -297,20 +297,21 @@ class population:
 	
 	def mutation_faze_0(self):
 		#num of mutations
-		#phase 0 - 1 mutation per unit
+		#phase 0 - 0.5 mutation per unit
 		for ind in self.individs:
-			if (len(ind.gens) >= 24):
-				if (self.mutagen_kir(ind) == -1):
-					print("Kir failed")
-					return -1
-			elif (len(ind.gens) >= 15):
-				if (self.mutagen_shennon(ind) == -1):
-					print("Shennon failed")
-					return -1
-			else:
-				if (self.mutagen_logic_minimize(ind) == -1):
-					print("Logic minimize failed")
-					return -1
+			if (random.randint(0,1) == 1):
+				if (len(ind.gens) >= 24):
+					if (self.mutagen_kir(ind) == -1):
+						print("Kir failed")
+						return -1
+				elif (len(ind.gens) >= 15):
+					if (self.mutagen_shennon(ind) == -1):
+						print("Shennon failed")
+						return -1
+				else:
+					if (self.mutagen_logic_minimize(ind) == -1):
+						print("Logic minimize failed")
+						return -1
 			
 		return 0
 	
@@ -333,6 +334,8 @@ class population:
 			return -1
 	
 	def mutagen_shennon(self, ind):
+		pass
+		'''
 		gens_before = ind.gens
 		num = random.randint(13, len(ind.gens)-1)
 		sample = random.sample(ind.gens, num)
@@ -351,6 +354,7 @@ class population:
 			print('new pol')
 			print(ind.gens)
 			return -1
+		'''
 		
 	def mutagen_bruteforce(self):
 		pass
@@ -472,7 +476,7 @@ pop1.gen_start()
 
 timess = []
 
-for its in range(2):
+for its in range(10):
 	print(pop1.iter_faze)
 	start = time.time()
 	if (pop1.crossing_faze_0() == -1):
