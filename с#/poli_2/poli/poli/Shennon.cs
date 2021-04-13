@@ -11,13 +11,12 @@ namespace poli
         private static int LIMIT;
 
         private static Dictionary<int[], List<int>> vecValues;
-
         public static void prepare(int l)
         {
             vecValues = new Dictionary<int[], List<int>>();
             LIMIT = l;
         }
-
+   
         public static async Task<List<int>> find(int[] vector)
         {
             if (vecValues.ContainsKey(vector))
@@ -218,8 +217,6 @@ namespace poli
                 List<int> polSum = taskPool[i + 2].Result;
                 if (minPol.Count == 0 || pol0.Count + pol1.Count < minPol.Count)
                 {
-                    Console.WriteLine("iter = " + ijk.ToString());
-                    Console.WriteLine("error 4");
                     if (n == LIMIT + 1)
                     {
                         minPol = Pol.multiByVar(1, pol1, ijk, true);
@@ -234,8 +231,6 @@ namespace poli
 
                 if (minPol.Count == 0 || polSum.Count + pol0.Count < minPol.Count)
                 {
-                    Console.WriteLine("iter = " + ijk.ToString());
-                    Console.WriteLine("error 5");
                     if (n == LIMIT + 1)
                     {
                         minPol = Pol.multiByVar(1, polSum, ijk, true);
@@ -250,8 +245,6 @@ namespace poli
 
                 if (minPol.Count == 0 || pol1.Count + polSum.Count < minPol.Count)
                 {
-                    Console.WriteLine("iter = " + ijk.ToString());
-                    Console.WriteLine("error 6");
                     if (n == LIMIT + 1)
                     {
                         minPol = Pol.multiByVar(0, pol1, ijk, true);

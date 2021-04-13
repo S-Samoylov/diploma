@@ -9,6 +9,7 @@ namespace poli
     class Program
     {
         //const int LIMIT = 2;
+        //public static int LIMIT;
 
         static void Main(string[] args)
         {
@@ -24,7 +25,7 @@ namespace poli
             {
                 LIMIT = (int)Char.GetNumericValue(Console.ReadLine()[0]);
                 //inputVectorString = Console.ReadLine();
-                inputVectorString = "1111110110100010001111111111011011101101010111101110111001110111";
+                inputVectorString = "1111110110100110";//001101011111110011101101010111101110010001111101";
             }
 
                 int n = (int) Math.Log(inputVectorString.Length, 2);
@@ -52,7 +53,7 @@ namespace poli
             }
             */
             Console.WriteLine(Pol.toCons(result, n));
-            Console.WriteLine("Result: " + Pol.toString(result, n));
+            //Console.WriteLine("Result: " + Pol.toString(result, n));
             /*
             int[] l = new int[inputVectorString.Length / 2];
             l[0] = 1;
@@ -76,7 +77,7 @@ namespace poli
             //Console.WriteLine("Time: " + (end - start).TotalSeconds);
 
             //wait
-            Console.ReadLine();
+            //Console.ReadLine();
         }
     }
 }

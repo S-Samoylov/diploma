@@ -105,13 +105,14 @@ def vec_shadow(vector):
     return result_poly
 
 def value_by_poly(poly): #list of lists/tuples
-    if (1 in poly):
-        poly.remove(1)
-        if (len(poly) == 0): return 1
-        result_poly = np.array([1]*2**len(poly[0]), dtype = int)
+    cop = copy.deepcopy(poly)
+    if (1 in cop):
+        cop.remove(1)
+        if (len(cop) == 0): return 1
+        result_poly = np.array([1]*2**len(cop[0]), dtype = int)
     else:
-        result_poly = np.zeros(2**len(poly[0]), dtype = int)
-    for x in poly:
+        result_poly = np.zeros(2**len(cop[0]), dtype = int)
+    for x in cop:
         result_poly = np.array(truthVector(x)) ^ result_poly
     return result_poly.tolist()  
 
@@ -151,12 +152,12 @@ def gen_min_shadow(n):
     #print(check_shadow_full(shadow))
     return shadow 
 
-def logic_minimize(s):
+def logic_minimize(s): #accept only list with tuples, returns same
     poli = copy.deepcopy(s)
     d = col.defaultdict(list)
     #generate dict {rank:list_of_cons}, f.e. {0: [1], 1: [[0, 0, 1, 0]], 2: [[1, 1, 0, 0]], 3: [[1, 1, 0, 1]], 4: [[1, 1, 1, 1]]}
     for ik in range(len(poli)):
-        poli[ik] = list(poli[ik])
+        if (poli[ik] != 1): poli[ik] = list(poli[ik])
     for x in poli:
         if (x == 1): d[con_rank(x)].append(x)
         else: d[con_rank(x)].append(x)
@@ -179,16 +180,23 @@ def logic_minimize(s):
                 if (poli[ind][not_zero_ind] == 1): poli[ind][not_zero_ind] = 2
                 elif (poli[ind][not_zero_ind] == 2): poli[ind][not_zero_ind] = 1
                 else: print('error1')
-                #4. delete replications
-                if (poli.count(poli[ind]) > 1): poli.remove(poli[ind])
+                #4. delete if replications
+                deleted_before = 0
+                repl_count = poli.count(poli[ind])
+                if (repl_count > 1):
+                    while(repl_count > 1):
+                        if (poli.index(poli[ind]) <= z): deleted_before += 1
+                        poli.remove(poli[ind])
+                        if (poli.index(poli[ind]) <= z): deleted_before += 1
+                        poli.remove(poli[ind])
+                        repl_count-=2
                 #here is needed to restart cycle with updated x
-                z -= 1
+                z = z - 1 - deleted_before
         else:
             for i in range(len(x)):
                 if (x[i] == 0): continue
                 new = x[:i] + [0] + x[i+1:]
                 if (new in d[con_rank(x) - 1]):
-                    #print(True)
                     #optimization has found
                     #1. change poli
                     ind = poli.index(x)
@@ -196,21 +204,39 @@ def logic_minimize(s):
                     elif (poli[ind][i] == 2): poli[ind][i] = 1
                     else: print('error1')
                     #2. change dict
-                    d[con_rank(x) - 1].remove(new) #delete subcon
-                    d[con_rank(x)][d[con_rank(x)].index(x)] = poli[ind]
+                    d[con_rank(new)].remove(new) #delete subcon
+                    #d[con_rank(x)][d[con_rank(x)].index(x)] = poli[ind]
                     #3. delete con from poli
                     poli.remove(new)
-                    #4. delete replications
-                    if (poli.count(poli[ind]) > 1):
-                        poli.remove(poli[ind])
-                        d[con_rank(x)].remove(poli[ind])
+                    x = copy.deepcopy(poli[ind])
+                    #4. delete if replications
+                    deleted_before = 0
+                    repl_count = poli.count(x)
+                    if (repl_count > 1):
+                        while(repl_count > 1):
+                            if (poli.index(x) <= z): deleted_before += 1
+                            poli.remove(x)
+                            if (poli.index(x) <= z): deleted_before += 1
+                            poli.remove(x)
+                            d[con_rank(x)].remove(x)
+                            d[con_rank(x)].remove(x)
+                            repl_count-=2
                     #here is needed to restart cycle with updated x
-                    z -= 1
+                    z = z - 1 - deleted_before
                     break
         #print('end', z, poli)
         z += 1
+        if (z < 0 ): z = 0
+        if (len(poli) == 0): break
     for ik in range(len(poli)):
-        poli[ik] = tuple(poli[ik])
+        if (poli[ik] != 1): poli[ik] = tuple(poli[ik])
+    #delete duplicates
+    s = set()
+    if (len(set(poli)) != len(poli)):
+        for x in set(poli):
+            l = poli.count(x)
+            if (l == 1 or (l > 1 and l % 2 == 1)): s.add(x)
+        poli = list(s)
     return poli
     
 def poli_output(poli):
