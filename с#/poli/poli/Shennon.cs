@@ -82,13 +82,13 @@ namespace poli
                 {
                     if (n == LIMIT + 1)
                     {
-                        minPol = Pol.multiByVar(1, pol1, i, true);
-                        minPol.AddRange(Pol.multiByVar(2, pol0, i, true));
+                        minPol = Pol.multiByVar(1, pol1, i, n, true);
+                        minPol.AddRange(Pol.multiByVar(2, pol0, i, n, true));
                     }
                     else
                     {
-                        minPol = Pol.multiByVar(1, pol1, i);
-                        minPol.AddRange(Pol.multiByVar(2, pol0, i));
+                        minPol = Pol.multiByVar(1, pol1, i, n);
+                        minPol.AddRange(Pol.multiByVar(2, pol0, i, n));
                     }
                 }
 
@@ -96,13 +96,13 @@ namespace poli
                 {
                     if (n == LIMIT + 1)
                     {
-                        minPol = Pol.multiByVar(1, polSum, i, true);
-                        minPol.AddRange(Pol.multiByVar(0, pol0, i, true));
+                        minPol = Pol.multiByVar(1, polSum, i, n, true);
+                        minPol.AddRange(Pol.multiByVar(0, pol0, i, n, true));
                     }
                     else
                     {
-                        minPol = Pol.multiByVar(1, polSum, i);
-                        minPol.AddRange(Pol.multiByVar(0, pol0, i));
+                        minPol = Pol.multiByVar(1, polSum, i, n);
+                        minPol.AddRange(Pol.multiByVar(0, pol0, i, n));
                     }
                 }
 
@@ -110,13 +110,13 @@ namespace poli
                 {
                     if (n == LIMIT + 1)
                     {
-                        minPol = Pol.multiByVar(0, pol1, i, true);
-                        minPol.AddRange(Pol.multiByVar(2, polSum, i, true));
+                        minPol = Pol.multiByVar(0, pol1, i, n, true);
+                        minPol.AddRange(Pol.multiByVar(2, polSum, i, n, true));
                     }
                     else
                     {
-                        minPol = Pol.multiByVar(0, pol1, i);
-                        minPol.AddRange(Pol.multiByVar(2, polSum, i));
+                        minPol = Pol.multiByVar(0, pol1, i, n);
+                        minPol.AddRange(Pol.multiByVar(2, polSum, i, n));
                     }
                 }
             }
@@ -218,49 +218,43 @@ namespace poli
                 List<int> polSum = taskPool[i + 2].Result;
                 if (minPol.Count == 0 || pol0.Count + pol1.Count < minPol.Count)
                 {
-                    Console.WriteLine("iter = " + ijk.ToString());
-                    Console.WriteLine("error 4");
                     if (n == LIMIT + 1)
                     {
-                        minPol = Pol.multiByVar(1, pol1, ijk, true);
-                        minPol.AddRange(Pol.multiByVar(2, pol0, ijk, true));
+                        minPol = Pol.multiByVar(1, pol1, ijk, n, true);
+                        minPol.AddRange(Pol.multiByVar(2, pol0, ijk, n, true));
                     }
                     else
                     {
-                        minPol = Pol.multiByVar(1, pol1, ijk);
-                        minPol.AddRange(Pol.multiByVar(2, pol0, ijk));
+                        minPol = Pol.multiByVar(1, pol1, ijk, n);
+                        minPol.AddRange(Pol.multiByVar(2, pol0, ijk, n));
                     }
                 }
 
                 if (minPol.Count == 0 || polSum.Count + pol0.Count < minPol.Count)
                 {
-                    Console.WriteLine("iter = " + ijk.ToString());
-                    Console.WriteLine("error 5");
                     if (n == LIMIT + 1)
                     {
-                        minPol = Pol.multiByVar(1, polSum, ijk, true);
-                        minPol.AddRange(Pol.multiByVar(0, pol0, ijk, true));
+                        minPol = Pol.multiByVar(1, polSum, ijk, n, true);
+                        minPol.AddRange(Pol.multiByVar(0, pol0, ijk, n, true));
                     }
                     else
                     {
-                        minPol = Pol.multiByVar(1, polSum, ijk);
-                        minPol.AddRange(Pol.multiByVar(0, pol0, ijk));
+                        minPol = Pol.multiByVar(1, polSum, ijk, n);
+                        minPol.AddRange(Pol.multiByVar(0, pol0, ijk, n));
                     }
                 }
 
                 if (minPol.Count == 0 || pol1.Count + polSum.Count < minPol.Count)
                 {
-                    Console.WriteLine("iter = " + ijk.ToString());
-                    Console.WriteLine("error 6");
                     if (n == LIMIT + 1)
                     {
-                        minPol = Pol.multiByVar(0, pol1, ijk, true);
-                        minPol.AddRange(Pol.multiByVar(2, polSum, ijk, true));
+                        minPol = Pol.multiByVar(0, pol1, ijk, n, true);
+                        minPol.AddRange(Pol.multiByVar(2, polSum, ijk, n, true));
                     }
                     else
-                    {
-                        minPol = Pol.multiByVar(0, pol1, ijk);
-                        minPol.AddRange(Pol.multiByVar(2, polSum, ijk));
+                    {   
+                        minPol = Pol.multiByVar(0, pol1, ijk, n);
+                        minPol.AddRange(Pol.multiByVar(2, polSum, ijk, n));
                     }
                 }
                 ++ijk;

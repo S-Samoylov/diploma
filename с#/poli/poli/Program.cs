@@ -52,7 +52,7 @@ namespace poli
             }
             */
             Console.WriteLine(Pol.toCons(result, n));
-            Console.WriteLine("Result: " + Pol.toString(result, n));
+            //Console.WriteLine("Result: " + Pol.toString(result, n));
             /*
             int[] l = new int[inputVectorString.Length / 2];
             l[0] = 1;
@@ -76,7 +76,7 @@ namespace poli
             //Console.WriteLine("Time: " + (end - start).TotalSeconds);
 
             //wait
-            Console.ReadLine();
+            //Console.ReadLine();
         }
     }
 }

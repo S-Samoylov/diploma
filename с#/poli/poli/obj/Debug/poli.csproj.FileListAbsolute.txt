@@ -11,4 +11,3 @@ C:\diploma\с#\poli\poli\bin\Debug\poli.pdb
 C:\diploma\с#\poli\poli\obj\Debug\poli.csproj.CoreCompileInputs.cache
 C:\diploma\с#\poli\poli\obj\Debug\poli.exe
 C:\diploma\с#\poli\poli\obj\Debug\poli.pdb
-C:\diploma\с#\poli\poli\obj\Debug\poli.csprojResolveAssemblyReference.cache

@@ -22,12 +22,12 @@ namespace poli
                 inputValue += vector[i] * power;
                 power *= 2;
             }
-            //Console.WriteLine("ttt" + inputValue.ToString());
+
             List<int> zhigalkin = Zhigalkin.parse(vector);
             threshold = zhigalkin.Count;
-            //Console.WriteLine("zh" + threshold.ToString());
+
             List<int> result = walkTree(0, 0, 0);
-            //Console.WriteLine("res " + result[0].ToString());
+
             if (result.Count == 0)
             {
                 result = zhigalkin;
@@ -40,9 +40,10 @@ namespace poli
             return result;
         }
 
-        public static List<int> multiByVar(int var, List<int> pol, int place, bool afterWalkTree = false)
+        public static List<int> multiByVar(int var, List<int> pol, int place, int n, bool afterWalkTree = false)
         {
             List<int> result = new List<int>();
+            int ones = (int)Math.Pow(3, n);
 
             for (int i = 0; i < pol.Count; i++)
             {
@@ -75,7 +76,21 @@ namespace poli
                 }
                 else
                 {
-                    newCon = (newCon * 3 + var) * power + (con % power);
+                    if (con != ones)
+                    {
+                        newCon = (newCon * 3 + var) * power + (con % power);
+                    }
+                    else
+                    {
+                        if (var > 0)
+                        {
+                            newCon = var * power;
+                        }
+                        else
+                        {
+                            newCon = con;
+                        }
+                    }
                 }
                 result.Add(newCon);
             }
