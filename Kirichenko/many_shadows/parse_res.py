@@ -3,8 +3,8 @@
 import collections as col
 import pandas as pd
 
-n_start = 3
-n_end = 9
+n_start = 5
+n_end = 8
 num = 100
 
 def make_table(n_start, n_end, num):
@@ -12,7 +12,7 @@ def make_table(n_start, n_end, num):
     k = 0
     for it in range(n_start, n_end+1):
         res_list.append([])
-        file = open(f'result_performed_random_vecs_{it}_{num}.txt', 'r')
+        file = open(f'result_performed_100_shadows_random_vecs_{it}_{num}.txt', 'r')
 
         lines = file.readlines()
         file.close()
@@ -26,24 +26,24 @@ def make_table(n_start, n_end, num):
         in_vec = False
         j = 0
 
-        for i in range(0,len(lines),15):
+        for i in range(0,len(lines),12):
             j += 1
             d[j].append(int(lines[i+4]))
             d[j].append(int(lines[i+7]))
             d[j].append(int(lines[i+10]))
-            d[j].append(int(lines[i+13]))
-            delta = d[j][1] - d[j][3]
+            #d[j].append(int(lines[i+13]))
+            delta = d[j][0] - d[j][2]
             if (delta > max_delta): max_delta = delta
-            if (d[j][1] == d[j][2]): num_zero_after += 1
+            if (d[j][0] == d[j][2]): num_zero_after += 1
             if (d[j][2] < min_after): min_after = d[j][2]
-            if (d[j][2] == d[j][3]): num_zero_performed += 1
-            if (d[j][3] < min_after_performed): min_after_performed = d[j][3]
+            #if (d[j][2] == d[j][3]): num_zero_performed += 1
+            #if (d[j][3] < min_after_performed): min_after_performed = d[j][3]
         res_list[k].append(j)
         #print('last_len = ', d[j][1])
-        avg_len = sum([d[x][2] for x in range(1, j+1)])/j
-        avg_len_before = sum([d[x][1] for x in range(1, j+1)])/j
-        avg_len_performed = sum([d[x][3] for x in range(1, j+1)])/j
-        avg_len_zhig = sum([d[x][0] for x in range(1, j+1)])/j
+        avg_len = sum([d[x][1] for x in range(1, j+1)])/j
+        avg_len_before = sum([d[x][0] for x in range(1, j+1)])/j
+        avg_len_performed = sum([d[x][2] for x in range(1, j+1)])/j
+        #avg_len_zhig = sum([d[x][0] for x in range(1, j+1)])/j
         #res_list[k].append(avg_len_zhig)
         res_list[k].append(avg_len_before)
         #res_list[k].append(avg_len)
@@ -58,6 +58,6 @@ def make_table(n_start, n_end, num):
     return (res_list)
 
 df = pd.DataFrame(make_table(n_start, n_end, num), columns = ['Количество протестированных функций', 'Средняя длина полинома без минимизации', 'Средняя длина полинома после минимизации', 'Количество функций для которых минимизация не привела к улучшению', 'Наибольшая разница длин полиномов до и после минимизации'], index = [x for x in range(n_start, n_end+1)])
-df.to_html('table_final.html')
+df.to_html('table2_final.html')
 subprocess.call('wkhtmltoimage -f png --width 0 table.html table.png', shell=True)
 

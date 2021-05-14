@@ -1,0 +1,54 @@
+End of global iter 1
+3
+End of global iter 2
+5
+End of global iter 3
+5
+End of global iter 4
+5
+End of global iter 5
+7
+End of global iter 6
+11
+End of global iter 7
+11
+End of global iter 8
+14
+End of global iter 9
+12
+End of global iter 10
+12
+End of global iter 11
+16
+End of global iter 12
+16
+End of global iter 13
+20
+End of global iter 14
+22
+End of global iter 15
+32
+End of global iter 16
+32
+End of global iter 17
+36
+End of global iter 18
+38
+End of global iter 19
+37
+End of global iter 20
+39
+End of global iter 21
+44
+End of global iter 22
+57
+End of global iter 23
+61
+End of global iter 24
+70
+End of global iter 25
+69
+End of global iter 26
+68
+End of global iter 27
+66

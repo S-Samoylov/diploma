@@ -1,0 +1,144 @@
+End of global iter 1
+3
+End of global iter 2
+3
+End of global iter 3
+3
+End of global iter 4
+3
+End of global iter 5
+3
+End of global iter 6
+3
+End of global iter 7
+3
+End of global iter 8
+3
+End of global iter 9
+3
+End of global iter 10
+3
+End of global iter 11
+3
+End of global iter 12
+3
+End of global iter 13
+3
+End of global iter 14
+3
+End of global iter 15
+3
+End of global iter 16
+3
+End of global iter 17
+3
+End of global iter 18
+3
+End of global iter 19
+3
+End of global iter 20
+3
+End of global iter 21
+3
+End of global iter 22
+3
+End of global iter 23
+3
+End of global iter 24
+3
+End of global iter 25
+3
+End of global iter 26
+3
+End of global iter 27
+3
+End of global iter 28
+3
+End of global iter 29
+3
+End of global iter 30
+3
+End of global iter 31
+3
+End of global iter 32
+3
+End of global iter 33
+3
+End of global iter 34
+3
+End of global iter 35
+3
+End of global iter 36
+3
+End of global iter 37
+3
+End of global iter 38
+3
+End of global iter 39
+3
+End of global iter 40
+3
+End of global iter 41
+3
+End of global iter 42
+3
+End of global iter 43
+3
+End of global iter 44
+3
+End of global iter 45
+3
+End of global iter 46
+3
+End of global iter 47
+3
+End of global iter 48
+3
+End of global iter 49
+5
+End of global iter 50
+7
+End of global iter 51
+7
+End of global iter 52
+7
+End of global iter 53
+7
+End of global iter 54
+7
+End of global iter 55
+7
+End of global iter 56
+9
+End of global iter 57
+13
+End of global iter 58
+13
+End of global iter 59
+15
+End of global iter 60
+17
+End of global iter 61
+23
+End of global iter 62
+25
+End of global iter 63
+25
+End of global iter 64
+13
+End of global iter 65
+9
+End of global iter 66
+8
+End of global iter 67
+5
+End of global iter 68
+2
+End of global iter 69
+1
+End of global iter 70
+1
+End of global iter 71
+1
+End of global iter 72
+1

@@ -5,12 +5,12 @@ import random
 import sys
 import time
 import subprocess
+sys.path.append("C:\\diploma\\Kirichenko")
+from kir_one_shadow import *
 
-from kir_one_shadow_performed_for_some_shadows import *
 
 
-
-MAX_INDIVID_NUM = 100
+MAX_INDIVID_NUM = 25
 MAX_ITER_FAZE_1 = 10
 RESULT_INDIVID_NUM = 5
 START_NUM = 3 #minimum = 2
@@ -191,18 +191,6 @@ class population:
 					f.writelines('crossing_dual_err_end\n')
 					f.close()					
 				else:
-					f = open('log.txt','a')
-					f.writelines('crossing_dual_good\n')
-					f.writelines('first\n')
-					f.writelines(str(ind1.gens)+ '\n')
-					f.writelines(str(gens_crossed_1)+ '\n')
-					f.writelines(str(new_pol1)+ '\n')
-					f.writelines('second\n')
-					f.writelines(str(ind2.gens)+ '\n')
-					f.writelines(str(gens_crossed_2)+ '\n')
-					f.writelines(str(new_pol2)+ '\n')
-					f.writelines('crossing_dual_good_end\n')
-					f.close()	
 					acp1 = False
 					acp2 = False
 					for ind in self.individs:
@@ -329,9 +317,9 @@ class population:
 		#~ 0.5 mutation per unit
 		for ind in self.individs:
 			if (random.randint(0,1) == 1):
-				if (len(ind.gens) >= 22):
+				if (len(ind.gens) >= 34):
 					self.mutagen_kir(ind)
-				elif (len(ind.gens) >= 5):
+				elif (len(ind.gens) >= 24):
 					self.mutagen_shennon(ind)
 				else:
 					self.mutagen_logic_minimize(ind)
@@ -342,9 +330,9 @@ class population:
 		#~ 0.5 mutation per unit
 		for ind in self.individs:
 			if (random.randint(0,1) >= 1):
-				if (len(ind.gens) >= 22):
+				if (len(ind.gens) >= 34):
 					self.mutagen_kir(ind)
-				elif (len(ind.gens) >= 14):
+				elif (len(ind.gens) >= 24):
 					self.mutagen_shennon(ind)
 				else:
 					self.mutagen_logic_minimize(ind)
@@ -355,9 +343,9 @@ class population:
 		#~ 0.66% mutation per unit
 		for ind in self.individs:
 			if (random.randint(0,2) >= 1):
-				if (len(ind.gens) >= 22):
+				if (len(ind.gens) >= 34):
 					self.mutagen_kir(ind)
-				elif (len(ind.gens) >= 14):
+				elif (len(ind.gens) >= 24):
 					self.mutagen_shennon(ind)
 				else:
 					self.mutagen_logic_minimize(ind)
@@ -365,7 +353,7 @@ class population:
 	
 	def mutagen_kir(self, ind):
 		gens_before = ind.gens
-		num = random.randint(16, len(ind.gens)-1)
+		num = random.randint(30, len(ind.gens)-1)
 		sample = random.sample(ind.gens, num)
 		old_gens = set(sample)
 		new_gens = set(kir_with_min(''.join(str(x) for x in value_by_poly(sample))))
@@ -389,10 +377,10 @@ class population:
 	
 	def mutagen_shennon(self, ind):
 		gens_before = ind.gens
-		num = random.randint(3, len(ind.gens)-1)
+		num = random.randint(22, len(ind.gens)-1)
 		sample = random.sample(ind.gens, num)
 		old_gens = set(sample)
-		res = subprocess.check_output(['poli.exe', '2', ''.join(str(x) for x in value_by_poly(sample))], encoding='utf-8')
+		res = subprocess.check_output(['C:\\diploma\\с#\\poli\\poli\\bin\\Debug\\poli.exe', '2', ''.join(str(x) for x in value_by_poly(sample))], encoding='utf-8')
 		sharp_res = parse_sharp_out(res,N)
 		new_gens = set(sharp_res)
 		if ("".join(str(x) for x in value_by_poly(list(ind.mini_upd(old_gens, new_gens)))) != self.vec):
@@ -410,18 +398,6 @@ class population:
 			f.close()
 			population.bad_shannon += 1
 		else:
-			f = open('log.txt','a')
-			f.writelines("Shennon good\n")
-			f.writelines('before pol\n')
-			f.writelines(str(gens_before)+ '\n')
-			f.writelines('old gens\n')
-			f.writelines(str(old_gens)+ '\n')
-			f.writelines('new gens\n')
-			f.writelines(str(new_gens)+ '\n')
-			f.writelines('new pol\n')
-			f.writelines(str(ind.mini_upd(old_gens, new_gens))+ '\n')
-			f.writelines("Shennon good end\n")
-			f.close()
 			ind.update(old_gens, new_gens)
 			population.good_shannon += 1
 		
@@ -460,7 +436,7 @@ class population:
 			l.append(1)
 		pop1.add_individ(l)
 		print('ind_2_created')
-		res = subprocess.check_output(['poli.exe', '2', vect], encoding='utf-8')
+		res = subprocess.check_output(['C:\\diploma\\с#\\poli\\poli\\bin\\Debug\\poli.exe', '2', vect], encoding='utf-8')
 		sharp_res = parse_sharp_out(res,N)
 		if ("".join(str(x) for x in value_by_poly(sharp_res)) != self.vec):
 			print("Sharp failed")
@@ -632,9 +608,7 @@ class individual:
 		else: return (self.gens - old_gens) ^ new_gens
 
 #main part#
-vect = '11100010110011111101110100001010'
-#vect = input()
-
+vect = '01101110111111011010111101111000011011010111001101111011000001100000001110100111010010111100110111110011100101101010000011111101'
 N = int(math.log(len(vect), 2))
 pop1 = population(vect)
 pop1.gen_start()
@@ -646,4 +620,14 @@ while(True):
 	pop1.selection()
 	if (pop1.end_of_iter() == -1):
 		break
+
+timess = []
+
+
+
+
+#19.25s - один по 100
+#100/100/87
+
+
 
